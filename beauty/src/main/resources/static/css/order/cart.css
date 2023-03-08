@@ -202,6 +202,12 @@ main div.cartFrame > .cartList > table td:last-child a {
 main div.cartFrame > .cartList > table td:last-child a:hover {
     color: #333333;
 }
+main div.cartFrame > .cartList > table tr:nth-child(1) > td.deliveryInfo {
+	display:table-cell;
+}
+main div.cartFrame > .cartList > table tr:nth-child(n+2) > td.deliveryInfo {
+	display:none;
+}
 
 /*마이페이지 - 콘텐츠 - 카트 - 삭제버튼*/
 main div.cartFrame > .cartList > .cartBtns {
@@ -394,6 +400,14 @@ main div.wishListFrame > .wishList > .item > .itemInfo > span {
 }
 
 .wishListFrame > article.wishList > div.emptyWish {
+	color: #555555;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	margin: 30px 0;	
+}
+
+.cartFrame > article.cartList > div.emptyCart {
 	color: #555555;
 	font-weight: bold;
 	font-size: 20px;

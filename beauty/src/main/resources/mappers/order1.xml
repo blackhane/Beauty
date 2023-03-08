@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 김동근 -->
+<mapper namespace="kr.co.beauty.dao.Order1DAO">
+	
+	<!-- 카트 -->
+	<select id="selectCartList" resultType="CartVO">
+		SELECT * FROM `cart` WHERE `email`=#{email};
+	</select>
+	
+	<delete id="deleteSelectedCart">
+		DELETE FROM `cart` WHERE `cartNo`=#{cartNo};
+	</delete>
+	<delete id="deleteAllCart">
+		DELETE FROM `cart` WHERE `email`=#{email};
+	</delete>
+	
+	<select id="checkCountForUpdate" resultType="int">
+		SELECT `count` FROM `cart`
+		WHERE `cartNo` = #{cartNo};
+	</select>
+	<update id="cartIncrease">
+		UPDATE `cart` SET
+		count = count + 1
+		WHERE `cartNo` = #{cartNo};
+	</update>
+	<update id="cartDecrease">
+		UPDATE `cart` SET
+		count = count - 1
+		WHERE `cartNo` = #{cartNo};
+	</update>
+	
+</mapper>

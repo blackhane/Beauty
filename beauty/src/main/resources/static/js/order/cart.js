@@ -1,4 +1,10 @@
 $(function(){
+	
+	//테이블이 비었으면
+	if($('article.cartList > table > tbody').children().length == 0){
+		emptyTable();
+	}
+	
     /* total Table에 쓰이는 변수 */
     let headCnt	= 0;
     let count 	= 0;
@@ -30,10 +36,10 @@ $(function(){
 	/* 전부 체크 해제인 경우*/
 	function check() {
 		if ($("input:checkbox[name='chkCart']").is(":checked")==false) {
-			/* 전부 선택*/
+			/* 전부 선택 합계 */
 			sumAll();
 		}else {
-			/* 개별 선택*/
+			/* 개별 선택 합계 */
 			sumChecked();
 		}
 	}
@@ -43,7 +49,7 @@ $(function(){
 		e.preventDefault();
 		let cartNo = $(this).parent().parent().parent().children('td:nth-child(1)').children('input[type=checkbox]').val();
 		$.ajax({
-			url:'/Beauty/myshop/cartIncrease',
+			url:'/Beauty/order/cartIncrease',
 			type:'POST',
 			data:{'cartNo': cartNo},
 			dataType:'json',
@@ -67,7 +73,7 @@ $(function(){
 		}
 		let cartNo = $(this).parent().parent().parent().children('td:nth-child(1)').children('input[type=checkbox]').val();
 		$.ajax({
-			url:'/Beauty/myshop/cartDecrease',
+			url:'/Beauty/order/cartDecrease',
 			type:'POST',
 			data:{'cartNo': cartNo},
 			dataType:'json',
@@ -80,7 +86,121 @@ $(function(){
 			}
 		});
 	});
-
+	
+	
+	/* tableBtns */
+	/* 관심상품등록 */
+	$('div.cartFrame > article.cartList > table > tbody td > a.btnTableAddWish').click(function(e){
+		e.preventDefault();
+		let prodNo = parseInt($(this).parent().children('input').val());
+		$.ajax({
+			url:'/Beauty/order/addWishFromCart',
+			type:'POST',
+			data:{'prodNo': prodNo},
+			dataType:'json',
+			success:function(data){
+				if(data == 1){
+					alert('등록되었습니다.');
+				}else{
+				}
+			}
+		});
+	});
+	/* 삭제 */
+	$('div.cartFrame > article.cartList > table > tbody td > a.btnTableDelete').click(function(e){
+		e.preventDefault();
+		let tr = $(this).parent().parent();
+		let cartNo = parseInt($(this).parent().parent().children('td:first-child').children('input').val());
+		$.ajax({
+			url:'/Beauty/order/deleteSelectedCart',
+			type:'GET',
+			data:{'cartNo': cartNo},
+			dataType:'json',
+			success:function(data){
+				if(data == 1){
+					tr.remove();
+					//테이블이 비었으면
+					if($('article.cartList > table > tbody').children().length == 0){
+						emptyTable();
+					}
+				}else{
+				}
+			}
+		});
+	});
+	
+	/* cartBtns */
+	/* 카트비우기 */
+	$('#btnDeleteAllCart').click(function(e){
+		e.preventDefault();
+		if(confirm('장바구니를 비우시겠습니까?')){
+			$.ajax({
+				url:'/Beauty/order/deleteAllCart',
+				type:'POST',
+				data:{},
+				dataType:'json',
+				success:function(data){
+					if(data == 1){
+						emptyTable();
+					}else{
+					}
+				}
+			});
+		}else{
+			return;
+		}
+	});
+	/* 카트 선택 삭제 */
+	$('#btnDeleteSelectedCart').click(function(e){
+		e.preventDefault();
+		let chkList = [];
+		$('input[name=chkCart]').each(function(){
+			if($(this).is(":checked")){
+				chkList.push(parseInt($(this).val()));
+			}
+		});
+		console.log(chkList);
+		$.ajax({
+			url:'/Beauty/order/deleteSelectedCart',
+			type:'POST',
+			data:{'chkList': chkList},
+			dataType:'json',
+			success:function(data){
+				if(data == 1){
+					for(let chk of chkList){
+						//선택된 테이블 삭제
+						$('input[name=chkCart]').each(function(){
+							if(parseInt($(this).val()) == chk){
+								$(this).parent().parent().remove();
+							}
+						});
+					}
+					//합계 넣기
+					sumAll();
+					//테이블이 비었으면
+					if($('article.cartList > table > tbody').children().length == 0){
+						emptyTable();
+					}
+				}else{
+					alert('1개보다 작게 설정할 수 없습니다.');
+				}
+			}
+		});
+	});
+	
+	/* 빈 카트 */
+	function emptyTable(){
+		//카트 비었으면
+		//테이블, 토탈테이블 삭제, div.emptyCart 삽입
+		$('div.cartFrame table').remove();
+		$('.cartBtns').remove();
+		$('#headCount').text("0");
+		$('div.cartFrame > article.cartList').append('<div class="emptyCart">장바구니가 비어 있습니다.</div>');
+	}
+	
+	
+	
+	
 	/* 선택 구분 함수 */	
 	function sumChecked(){
 		initVal();

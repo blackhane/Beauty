@@ -14,7 +14,6 @@ public class WishVO {
 	private int wishNo;
 	private int prodNo;
 	private String email;
-	private int count;
 	private String rdate;
 	
 	//Add

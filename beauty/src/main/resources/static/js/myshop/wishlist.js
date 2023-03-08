@@ -20,28 +20,4 @@ $(function(){
 		}
 	});
 	
-	/* 수량감소 */
-	$('#wrap table a.btnDecrease').click(function(e){
-		e.preventDefault();
-		let amount = parseInt($('count').val());
-		if(amount<=1){ 
-			alert('1개보다 작게 설정할 수 없습니다.');
-			return;
-		}
-		let cartNo = $(this).parent().parent().parent().children('td:nth-child(1)').children('input[type=checkbox]').val();
-		$.ajax({
-			url:'/Beauty/myshop/cartDecrease',
-			type:'POST',
-			data:{'cartNo': cartNo},
-			dataType:'json',
-			success:function(data){
-				if(data == 1){
-					location.reload();				
-				}else{
-					alert('1개보다 작게 설정할 수 없습니다.');
-				}
-			}
-		});
-	});
-
 });

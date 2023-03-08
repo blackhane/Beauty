@@ -28,9 +28,9 @@
         <!-- css -->
         <link rel="stylesheet" th:href="@{/css/myshop/init.css}">
         <link rel="stylesheet" th:href="@{/css/myshop/myPage.css}">
-        <link rel="stylesheet" th:href="@{/css/myshop/cart.css}">
+        <link rel="stylesheet" th:href="@{/css/order/cart.css}">
         <!-- js -->
-        <script th:src="@{/js/myshop/cart.js}"></script>
+        <script th:src="@{/js/order/cart.js}"></script>
         
         <title>Cart</title>
         <script>
@@ -52,6 +52,7 @@
                         <section class="myContent">
                             
                             <!-- 각 페이지 내용 -->
+                            <a class="btn" th:href="@{/order/test}">테스트</a>
                             <div class="cartFrame">
                                 <section class="nav">
                                     <p class="current"><span>1</span>장바구니</p> 
@@ -110,8 +111,8 @@
                                                 <!-- 비회원 포인트란 - 표시 -->
                                                 <td><span th:text="${#numbers.formatInteger(cart.point * cart.count, 0, 'COMMA')}"></span>원</td>
                                                 <td><span th:text="${#numbers.formatInteger(cart.getTotalPrice, 0, 'COMMA')}"></span>원</td>
-												<!-- 첫행에만 나올것 -->
-                                                <td rowspan="100" th:if="${cartStat.index == 0}"> 
+												<!-- 첫행에만 나올것 동적처리를 위해 css적용 -->
+                                                <td class="deliveryInfo" rowspan="100"> 
                                                 	<!-- 배송비 체크 -->
                                                     <span th:if="${#aggregates.sum(cartList.![getTotalPrice]) >= 50000}">무료</span>
                                                     <span th:unless="${#aggregates.sum(cartList.![getTotalPrice]) >= 50000}">2500원</span>
@@ -121,9 +122,10 @@
                                                     </label>
                                                 </td>
                                                 <td>
-                                                    <a class="btn" href="#">주문하기</a>
-                                                    <a class="btn" th:href="@{/myshop/addWish(prodNo=${cart.prodNo})}">관심상품등록</a>
-                                                    <a class="btn" th:href="@{/myshop/deleteSelectedCart(cartNo=${cart.cartNo})}">삭제</a>
+                                                    <a class="btn btnTableOrder" href="#">주문하기</a>
+                                                    <a class="btn btnTableAddWish" href="#">관심상품등록</a>
+                                                    <a class="btn btnTableDelete" href="#">삭제</a>
+                                                	<input type="hidden" name="prodNo" th:value="${cart.prodNo}">
                                                 </td>
                                             </tr>
                                             </th:block>
@@ -138,6 +140,7 @@
                                     </div>
                                 </article>
                                 <!-- Total 테이블-->
+                                <th:block th:unless="${#lists.size(cartList) == 0}"> 
                                 <div>
                                     <table class="totalTable">
                                         <thead>
@@ -187,6 +190,7 @@
                                             </td></tr>
                                         </tbody>
                                     </table>
+                                    </th:block>
                                 </div>
                                 <!-- 주문 버튼 -->
                                 <div class="cartBtns">
@@ -212,7 +216,7 @@
 	                                                -->
 	                                                <img th:src="@{/img/}+${wish.thumb1}" alt="">
 	                                            </a>
-	                                            <a class="delete" th:href="@{/myshop/deleteSelectedWishFromCart(wishNo=${wish.wishNo})}">x</a>
+	                                            <a class="delete" th:href="@{/order/deleteSelectedWishFromCart(wishNo=${wish.wishNo})}">x</a>
 	                                        </div>
 	                                        <div class="itemInfo">
 	                                            <a th:href="@{/product/view(prodNo=${wish.prodNo})}" th:text="${wish.prodName}"></a>
