@@ -29,3 +29,338 @@
 2023-03-07 09:17:08,334 [Worker-14: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/register.html
 2023-03-07 09:17:08,334 [Worker-14: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/register.html
 2023-03-07 09:17:36,543 [Worker-18: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:23:49,292 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:25:11,939 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:25:11,940 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/_config.html
+2023-03-07 09:25:11,940 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/myshop/_mymenu.html
+2023-03-07 09:25:11,940 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/myshop/cart.html
+2023-03-07 09:25:11,941 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/myshop/wishlist.html
+2023-03-07 09:25:11,941 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/order/ordercomplete.html
+2023-03-07 09:25:11,941 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/order/orderform.html
+2023-03-07 09:25:11,941 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/_config.html
+2023-03-07 09:25:11,942 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/myshop/_mymenu.html
+2023-03-07 09:25:11,943 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/myshop/cart.html
+2023-03-07 09:25:11,943 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/myshop/wishlist.html
+2023-03-07 09:25:11,943 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/order/ordercomplete.html
+2023-03-07 09:25:11,943 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/order/orderform.html
+2023-03-07 09:25:32,582 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-03-07 09:26:37,112 [Worker-0: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:26:40,001 [Worker-2: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:26:46,043 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:28:23,053 [Worker-10: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:28:25,131 [Worker-5: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:29:22,629 [Worker-12: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:29:25,877 [Worker-4: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:31:32,209 [Worker-7: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:31:32,217 [Worker-7: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/register.html
+2023-03-07 09:31:32,221 [Worker-7: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/register.html
+2023-03-07 09:34:01,994 [Worker-5: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:34:03,792 [Worker-9: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:34:06,852 [Worker-9: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:35:17,631 [Worker-5: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:48:50,860 [Worker-19: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:48:54,506 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:49:02,320 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:49:05,385 [Worker-18: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:49:13,894 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:49:17,193 [Worker-20: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:49:25,033 [Worker-19: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:49:27,251 [Worker-21: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:49:30,291 [Worker-5: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:54:22,007 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:54:25,330 [Worker-21: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:54:47,614 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:54:50,981 [Worker-23: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:57:08,576 [Worker-18: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:57:13,049 [Worker-18: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:59:52,332 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:59:54,052 [Worker-18: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:59:55,554 [Worker-18: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 09:59:58,578 [Worker-21: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:00:01,698 [Worker-18: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:01:34,990 [Worker-21: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:01:39,611 [Worker-18: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:01:49,661 [Worker-24: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:01:52,934 [Worker-18: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:01:54,800 [Worker-24: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:01:58,977 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:04:12,265 [Worker-24: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:04:12,267 [Worker-24: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/register.html
+2023-03-07 10:04:12,268 [Worker-24: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/register.html
+2023-03-07 10:06:17,399 [Worker-18: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:08:50,225 [Worker-24: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:09:23,103 [Worker-24: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:10:38,402 [Worker-18: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:10:38,402 [Worker-18: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/register.html
+2023-03-07 10:10:38,402 [Worker-18: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/register.html
+2023-03-07 10:20:15,228 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:20:19,535 [Worker-25: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:20:44,441 [Worker-28: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:20:45,828 [Worker-26: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:20:48,878 [Worker-28: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:21:20,191 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:21:23,003 [Worker-26: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:21:29,663 [Worker-26: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:21:32,738 [Worker-24: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:21:33,795 [Worker-26: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:21:35,960 [Worker-27: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:22:50,641 [Worker-28: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:28:00,756 [Worker-25: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:28:03,196 [Worker-25: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:29:12,358 [Worker-31: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:29:15,768 [Worker-34: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:29:18,803 [Worker-32: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:29:24,581 [Worker-25: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:29:27,884 [Worker-31: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:37:27,159 [Worker-31: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:37:31,573 [Worker-30: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:38:11,318 [Worker-25: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:38:13,829 [Worker-32: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:38:58,655 [Worker-27: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:38:58,656 [Worker-27: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/register.html
+2023-03-07 10:38:58,656 [Worker-27: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/register.html
+2023-03-07 10:41:01,243 [Worker-25: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:41:03,186 [Worker-25: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:43:22,465 [Worker-31: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:43:25,491 [Worker-35: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:55:10,518 [Worker-38: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:55:15,354 [Worker-39: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:55:40,952 [Worker-35: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:55:44,652 [Worker-30: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:56:48,815 [Worker-38: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:56:51,164 [Worker-30: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:58:18,221 [Worker-39: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:58:21,495 [Worker-38: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:59:01,463 [Worker-40: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:59:03,789 [Worker-39: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:59:40,386 [Worker-39: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 10:59:44,222 [Worker-39: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:00:36,240 [Worker-35: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:00:36,240 [Worker-35: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 11:00:36,240 [Worker-35: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 11:03:04,746 [Worker-40: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:03:35,016 [main] INFO  o.t.e.e.d.ProjectDependencyDialectLocator - Scanning for dialect help files on project dependencies
+2023-03-07 11:03:35,109 [pool-16-thread-8] INFO  o.t.e.e.d.ProjectDependencyDialectLocator - Help file found: LayoutDialect.xml
+2023-03-07 11:03:35,115 [pool-16-thread-3] INFO  o.t.e.e.d.ProjectDependencyDialectLocator - Help file found: Standard-Dialect.xml
+2023-03-07 11:06:39,839 [Worker-39: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:06:39,839 [Worker-39: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 11:06:39,839 [Worker-39: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 11:08:00,331 [Worker-39: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:08:00,331 [Worker-39: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 11:08:00,331 [Worker-39: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 11:10:17,198 [Worker-39: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:10:17,198 [Worker-39: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 11:10:17,198 [Worker-39: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 11:10:39,527 [Worker-41: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:10:39,527 [Worker-41: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 11:10:39,527 [Worker-41: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 11:11:28,137 [Worker-35: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:11:28,137 [Worker-35: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 11:11:28,137 [Worker-35: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 11:12:18,485 [Worker-35: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:12:18,485 [Worker-35: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 11:12:18,486 [Worker-35: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 11:12:35,174 [Worker-35: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:12:35,174 [Worker-35: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 11:12:35,174 [Worker-35: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 11:12:46,827 [Worker-38: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:12:46,828 [Worker-38: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 11:12:46,828 [Worker-38: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 11:14:27,525 [Worker-43: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:16:27,341 [Worker-35: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:16:29,792 [Worker-44: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:20:42,982 [Worker-44: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:20:42,982 [Worker-44: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/register.html
+2023-03-07 11:20:42,983 [Worker-44: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/register.html
+2023-03-07 11:21:22,948 [Worker-41: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:21:57,403 [Worker-35: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:21:57,403 [Worker-35: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/register.html
+2023-03-07 11:21:57,403 [Worker-35: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/register.html
+2023-03-07 11:24:29,834 [Worker-41: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:24:29,834 [Worker-41: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/register.html
+2023-03-07 11:24:29,834 [Worker-41: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/register.html
+2023-03-07 11:25:29,797 [Worker-46: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:25:29,798 [Worker-46: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/register.html
+2023-03-07 11:25:29,798 [Worker-46: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/register.html
+2023-03-07 11:26:07,765 [Worker-41: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:26:07,765 [Worker-41: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/register.html
+2023-03-07 11:26:07,765 [Worker-41: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/register.html
+2023-03-07 11:26:19,098 [Worker-41: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:26:19,098 [Worker-41: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/register.html
+2023-03-07 11:26:19,098 [Worker-41: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/register.html
+2023-03-07 11:26:50,307 [Worker-45: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:26:53,815 [Worker-44: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:27:52,432 [Worker-43: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:28:26,862 [Worker-45: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:28:30,606 [Worker-47: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:28:49,985 [Worker-35: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:29:08,188 [Worker-44: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:29:08,189 [Worker-44: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/register.html
+2023-03-07 11:29:08,189 [Worker-44: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/register.html
+2023-03-07 11:30:01,168 [Worker-47: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:30:06,634 [Worker-47: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:30:11,160 [Worker-46: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:30:30,741 [Worker-41: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:30:30,741 [Worker-41: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/register.html
+2023-03-07 11:30:30,741 [Worker-41: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/register.html
+2023-03-07 11:30:33,236 [Worker-45: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:30:36,344 [Worker-45: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:31:22,720 [Worker-41: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:31:41,015 [Worker-41: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:31:44,909 [Worker-45: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:31:44,909 [Worker-45: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/register.html
+2023-03-07 11:31:44,909 [Worker-45: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/register.html
+2023-03-07 11:31:52,537 [Worker-35: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:31:52,537 [Worker-35: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/register.html
+2023-03-07 11:31:52,537 [Worker-35: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/register.html
+2023-03-07 11:32:36,516 [Worker-43: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:32:39,518 [Worker-41: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:34:12,767 [Worker-43: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:34:17,052 [Worker-44: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:36:43,109 [Worker-47: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:36:47,263 [Worker-41: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:38:35,969 [Worker-46: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:38:37,982 [Worker-43: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:40:59,538 [Worker-50: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:40:59,538 [Worker-50: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/_header.html
+2023-03-07 11:40:59,538 [Worker-50: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/_header.html
+2023-03-07 11:41:41,767 [Worker-47: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:41:44,436 [Worker-44: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:41:53,307 [Worker-51: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:41:57,619 [Worker-47: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:42:06,229 [Worker-43: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:42:10,651 [Worker-43: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:42:13,728 [Worker-47: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:42:16,777 [Worker-44: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:42:55,497 [Worker-51: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:42:55,497 [Worker-51: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 11:42:55,497 [Worker-51: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 11:43:03,776 [Worker-52: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:43:03,777 [Worker-52: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/_header.html
+2023-03-07 11:43:03,777 [Worker-52: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/_header.html
+2023-03-07 11:43:26,577 [Worker-43: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:43:26,577 [Worker-43: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 11:43:26,577 [Worker-43: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 11:43:59,711 [Worker-47: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:43:59,711 [Worker-47: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 11:43:59,711 [Worker-47: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 11:45:26,562 [Worker-43: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:45:26,562 [Worker-43: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 11:45:26,562 [Worker-43: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 11:48:08,076 [Worker-44: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:48:08,076 [Worker-44: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 11:48:08,076 [Worker-44: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 11:48:20,922 [Worker-50: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:48:24,445 [Worker-51: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:48:51,674 [Worker-51: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:49:38,536 [Worker-54: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:50:26,040 [Worker-43: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:50:41,007 [Worker-43: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:50:41,007 [Worker-43: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 11:50:41,007 [Worker-43: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 11:51:00,033 [Worker-50: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:51:00,033 [Worker-50: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 11:51:00,033 [Worker-50: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 11:51:41,547 [Worker-43: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:52:21,663 [Worker-44: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:52:21,663 [Worker-44: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 11:52:21,663 [Worker-44: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 11:52:35,035 [Worker-44: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:52:43,076 [Worker-51: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 11:53:23,548 [Worker-53: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:09:14,650 [Worker-57: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:09:14,651 [Worker-57: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 12:09:14,651 [Worker-57: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 12:30:26,463 [Worker-64: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:30:26,463 [Worker-64: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 12:30:26,463 [Worker-64: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 12:31:37,833 [Worker-64: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:31:40,337 [Worker-65: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:32:32,409 [Worker-65: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:32:32,409 [Worker-65: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 12:32:32,409 [Worker-65: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 12:32:57,648 [Worker-64: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:33:01,259 [Worker-61: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:33:03,849 [Worker-61: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:33:33,089 [Worker-64: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:33:37,187 [Worker-64: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:35:50,570 [Worker-64: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:35:52,319 [Worker-59: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:35:58,287 [Worker-61: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:36:26,285 [Worker-61: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:36:57,731 [Worker-64: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:36:57,732 [Worker-64: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 12:36:57,732 [Worker-64: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 12:37:00,564 [Worker-64: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:37:03,516 [Worker-64: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:37:06,668 [Worker-59: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:37:44,379 [Worker-59: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:37:48,105 [Worker-64: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:38:00,185 [Worker-61: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:38:02,175 [Worker-61: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:42:59,954 [Worker-66: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:45:27,483 [Worker-59: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:47:53,156 [Worker-70: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:48:13,973 [Worker-69: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:48:13,973 [Worker-69: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 12:48:13,973 [Worker-69: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 12:48:39,908 [Worker-68: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:49:28,332 [Worker-69: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:50:13,394 [Worker-68: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:50:43,292 [Worker-68: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:50:43,292 [Worker-68: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 12:50:43,292 [Worker-68: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 12:53:29,851 [Worker-70: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:58:56,302 [Worker-71: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:58:56,302 [Worker-71: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 12:58:56,302 [Worker-71: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 12:59:13,932 [Worker-71: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 12:59:13,932 [Worker-71: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 12:59:13,932 [Worker-71: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 12:59:43,257 [Worker-67: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 13:00:30,596 [Worker-67: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 13:05:31,199 [Worker-73: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 13:06:28,976 [Worker-71: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 13:06:41,862 [Worker-72: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 13:07:21,894 [Worker-71: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 13:07:34,739 [Worker-67: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 13:07:49,034 [Worker-59: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 13:08:56,583 [Worker-73: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 13:09:52,002 [Worker-67: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 13:17:09,531 [Worker-73: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 13:17:09,531 [Worker-73: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 13:17:09,531 [Worker-73: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 13:18:39,108 [Worker-76: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 13:18:39,108 [Worker-76: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 13:18:39,108 [Worker-76: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 13:20:40,363 [Worker-74: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-07 13:20:40,364 [Worker-74: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-07 13:20:40,364 [Worker-74: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-07 13:21:15,110 [Worker-76: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-09 08:58:31,062 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-03-09 09:00:31,070 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-03-09 09:01:14,998 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-03-09 09:01:18,923 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: full
+2023-03-09 09:01:19,096 [Worker-3: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Checking project: beauty
+2023-03-09 09:02:00,275 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-03-09 09:02:03,755 [Worker-10: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
+2023-03-09 09:02:03,800 [Worker-10: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/_config.html
+2023-03-09 09:02:03,805 [Worker-10: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/_header.html
+2023-03-09 09:02:03,806 [Worker-10: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/list.html
+2023-03-09 09:02:03,806 [Worker-10: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/admin/product/register.html
+2023-03-09 09:02:03,806 [Worker-10: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/myshop/_mymenu.html
+2023-03-09 09:02:03,806 [Worker-10: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/myshop/cart.html
+2023-03-09 09:02:03,806 [Worker-10: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/myshop/wishlist.html
+2023-03-09 09:02:03,806 [Worker-10: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/order/ordercomplete.html
+2023-03-09 09:02:03,806 [Worker-10: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/bin/main/templates/order/orderform.html
+2023-03-09 09:02:03,808 [Worker-10: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/_config.html
+2023-03-09 09:02:03,808 [Worker-10: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/_header.html
+2023-03-09 09:02:03,808 [Worker-10: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/list.html
+2023-03-09 09:02:03,808 [Worker-10: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/admin/product/register.html
+2023-03-09 09:02:03,808 [Worker-10: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/myshop/_mymenu.html
+2023-03-09 09:02:03,808 [Worker-10: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/myshop/cart.html
+2023-03-09 09:02:03,809 [Worker-10: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/myshop/wishlist.html
+2023-03-09 09:02:03,809 [Worker-10: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/order/ordercomplete.html
+2023-03-09 09:02:03,809 [Worker-10: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating resource: /beauty/src/main/resources/templates/order/orderform.html
+2023-03-09 09:03:01,257 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-03-09 09:11:34,056 [Worker-5: Building] INFO  o.t.e.e.builder.ThymeleafBuilder - Unvalidating HTML files for Thymeleaf attribute processors.  Build kind: auto
