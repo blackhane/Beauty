@@ -83,4 +83,9 @@ public class ProductService {
 		return result;
 	}
 	
+	//ªÛ«∞ view 
+	public ProductVO selectProduct(String prodNo) {
+		return dao.selectProduct(prodNo);
+	}
+	
 }

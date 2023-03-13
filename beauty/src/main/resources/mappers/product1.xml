@@ -68,4 +68,9 @@
 			</choose>	
 	</select>
 	
+	<!-- 상품 view -->
+	<select id="selectProduct" resultType="ProductVO">
+		select * from `product` where `prodNo`=#{prodNo};
+	</select>
+	
 </mapper>

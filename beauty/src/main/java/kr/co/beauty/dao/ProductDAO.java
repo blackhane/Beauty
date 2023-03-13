@@ -12,6 +12,7 @@ import kr.co.beauty.vo.ProductVO;
 @Repository
 public interface ProductDAO {
 	
+	//list
 	public List<ProductVO> selectProductNew();
 	public List<ProductVO> selectProductBest();
 	public List<ProductVO> selectProduct1(int arg0, String arg1, int arg2);
@@ -19,5 +20,8 @@ public interface ProductDAO {
 	public int selectProduct1Count(int cate);
 	public int selectProduct2Count(int cate);
 	public List<ProdCate2VO> selectCate(int cate);
+	
+	//view
+	public ProductVO selectProduct(String prodNo);
 
 }

@@ -56,4 +56,15 @@ public class ProductController {
 		model.addAttribute("page", pageArr);
 		return "product/list";
 	}
+	
+	@GetMapping("shop/view")
+	public String productView(Model model,@RequestParam("pno") String prodNo) {
+		
+		//상품출력
+		ProductVO prod = service.selectProduct(prodNo);
+		model.addAttribute("prod", prod);
+		
+		
+		return "product/view";
+	}
 }

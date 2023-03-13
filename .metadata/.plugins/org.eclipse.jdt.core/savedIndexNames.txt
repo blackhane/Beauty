@@ -15,12 +15,21 @@ INDEX VERSION 1.131+C:\Users\java1\Desktop\Beauty\Beauty\.metadata\.plugins\org.
 4105623761.index
 733835577.index
 3044565995.index
+<<<<<<< HEAD
 2881371286.index
 1726983944.index
 1319448265.index
 2285850440.index
 2299144788.index
 1299371565.index
+=======
+1319448265.index
+2881371286.index
+2299144788.index
+2285850440.index
+1299371565.index
+1726983944.index
+>>>>>>> f534ab70f2ae16cca4d7bc82d9e8bdd18aed7d63
 1162631556.index
 2509686829.index
 3248573750.index
@@ -28,6 +37,7 @@ INDEX VERSION 1.131+C:\Users\java1\Desktop\Beauty\Beauty\.metadata\.plugins\org.
 439522950.index
 3606117521.index
 1522669455.index
+<<<<<<< HEAD
 3985728617.index
 2119909955.index
 231781865.index
@@ -35,24 +45,48 @@ INDEX VERSION 1.131+C:\Users\java1\Desktop\Beauty\Beauty\.metadata\.plugins\org.
 4139238072.index
 300384812.index
 725209559.index
+=======
+2119909955.index
+725209559.index
+300384812.index
+231781865.index
+4139238072.index
+172627550.index
+3985728617.index
+>>>>>>> f534ab70f2ae16cca4d7bc82d9e8bdd18aed7d63
 2144897117.index
 1360337660.index
 951224081.index
 869095781.index
 2260928173.index
+<<<<<<< HEAD
 1017408975.index
 2711521683.index
 3811561971.index
 47021472.index
 4000119567.index
 1751422547.index
+=======
+2711521683.index
+1017408975.index
+3811561971.index
+47021472.index
+4000119567.index
+2237926360.index
+>>>>>>> f534ab70f2ae16cca4d7bc82d9e8bdd18aed7d63
 682540332.index
 110701899.index
 528186323.index
 574784219.index
+<<<<<<< HEAD
 2237926360.index
 3672917582.index
 2545665055.index
+=======
+1751422547.index
+2545665055.index
+3672917582.index
+>>>>>>> f534ab70f2ae16cca4d7bc82d9e8bdd18aed7d63
 1098082403.index
 3448315931.index
 2814620180.index
