@@ -6,6 +6,7 @@
 	<th:block th:replace="~{/_config :: indexConfigFragment}"></th:block>
     <link rel="stylesheet" th:href="@{/css/product/view.css}">
     <link rel="stylesheet" th:href="@{/css/color.css}">
+<<<<<<< HEAD
 	<script th:inline="javascript">
 	$(function(){
 		$('.selectColor').click(function(){
@@ -186,6 +187,9 @@
 
 	});
 	</script>
+=======
+
+>>>>>>> e6f04367c1e0edc089d2422050edc72a6813ecae
 </head>
 <body>
     <th:block th:replace="~{/_header :: modileFragment}"></th:block>
@@ -212,6 +216,7 @@
                                             
                                             <div aria-live="polite" class="slick-list draggable">
                                                 <div class="slick-track" style="opacity: 1; width: 1350px; transform: translate3d(0px, 0px, 0px);" role="listbox">
+<<<<<<< HEAD
                                                     <div class="slick-slide on slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00">
                                                         <img th:src="@{/image/}+${prod.thumb1}">
                                                     </div>
@@ -229,6 +234,22 @@
                                                     </div>
                                                     <div class="blur slick-slide" data-slick-index="4" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide03">
                                                         <img th:src="@{/image/}+${prod.thumb6}">
+=======
+                                                    <div class="slick-slide on slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 140px;" tabindex="-1" role="option" aria-describedby="slick-slide00">
+                                                        <img th:src="@{/image/}+${prod.thumb1}">
+                                                    </div>
+                                                    <div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 140px;" tabindex="-1" role="option" aria-describedby="slick-slide01">
+                                                        <img src="/img/sample6.jpg">
+                                                    </div>
+                                                    <div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 140px;" tabindex="-1" role="option" aria-describedby="slick-slide02">
+                                                        <img src="/img/sample5.jpg">
+                                                    </div>
+                                                    <div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 140px;" tabindex="-1" role="option" aria-describedby="slick-slide02">
+                                                        <img src="/img/sample2.jpg">
+                                                    </div>
+                                                    <div class="blur slick-slide" data-slick-index="3" aria-hidden="false" style="width: 140px;" tabindex="-1" role="option" aria-describedby="slick-slide03">
+                                                        <img src="/img/sample3.jpg">
+>>>>>>> e6f04367c1e0edc089d2422050edc72a6813ecae
                                                     </div>
                                                 </div>
                                             </div>
@@ -285,6 +306,7 @@
                                     <!-- 반복문끝 -->
                                 </div>
                             </div>
+<<<<<<< HEAD
                             <div class="view_info">
                                 <h3>[[${prod.prodName}]]</h3>
                                 <p th:text="${prod.descript}"></p>
@@ -352,6 +374,212 @@
                     </div>
                 </div>
 				</div>
+=======
+                            <div class="info">
+                                <h3>[[${prod.prodName}]]</h3>
+                                <div class="price">
+                                    <div class="price-box">
+                                        <div>
+	    <span class="sell">
+	        <strong style="font-size: 22px; font-weight: 300;">[[${#numbers.formatInteger(prod.price, 3, 'COMMA')}]]</strong>원
+	    </span>
+	</div>
+	<div th:if="${prod.discount} != '0'">
+	    <span class="p1">[[${prod.discount}]]%</span>
+	    <span class="p2"><em>원</em></span>
+	</div>
+	<div class="discount">총 원 할인</div>
+                                    </div>
+                                </div>
+                                <div class="inner">
+                                    <div class="inner-box">
+                                        <div class="left_area" style="margin-top:30px">
+                                            <div style="border-top: 1px solid #e9e9e9; margin-bottom:16px;"></div>
+                                            <table class="list">
+                                                <colgroup>
+                                                    <col style="width: 100px;">
+                                                    <col>
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr class="bef">
+                                                        <th scope="row">카드혜택</th>
+                                                        <td>
+                                                            <a href="javascript:;" onclick="open_layer('interest_layer'); " style=" text-decoration: underline;color: #999999; margin:5px 0 ;">
+                                                                무이자 혜택
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                    
+                                                    <!--//카드혜택-->
+                                                    <tr class="bef">
+                                                        <th scope="row">적립혜택</th>
+                                                        <td>
+                                                            <div class="benefit">
+                                                                <div>
+                                                                    <a href="#">최대 3% 적립</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="bef">
+                                                        <th scope="row">맴버쉽혜택</th>
+                                                        <td>
+                                                            <div class="benefit">
+                                                                <div>
+                                                                    <a href="#">등급별혜택보기</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr><td colspan="2" height="10"></td></tr>
+                                                </tbody>
+                                            </table>
+                                            <div style="padding-top:27px; border-top: 1px solid #e9e9e9; margin-top:5px;"></div>
+                                            <table class="list">
+                                                <colgroup>
+                                                    <col style="width: 100px;">
+                                                    <col>
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr class="bef">
+                                                        <th scope="row">배송구분</th>
+                                                        <td>
+                                                            <div class="benefit">
+                                                                <div>
+                                                                    <a href="#">
+                                                                        8만원이상 구매시<span style="color:#9265ee; font-style: oblique; font-weight:600; font-size:14px;">무료배송</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="bef">
+                                                        <th scope="row">배송예상</th>
+                                                        <td>
+                                                            <div class="benefit">
+                                                                <div>
+                                                                    <a href="#">
+                                                                        오늘출발가능
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="bef">
+                                                        <th scope="row">관리 TIP</th>
+                                                        <td>
+                                                            <div class="benefit">
+                                                                <div>
+                                                                    <a href="#">
+                                                                        폴리, 폴리에스터
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="bef">
+                                                        <th scope="row">사이즈안내</th>
+                                                        <td>
+                                                            <div class="benefit">
+                                                                <div>
+                                                                    <a href="#">
+                                                                        착장 모델 사이즈
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="bef">
+                                                        <th scope="row">구매수</th>
+                                                        <td>
+                                                            <div class="benefit">
+                                                                <div>
+                                                                    <a href="#">
+                                                                        404
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!-- 옵션 -->
+                                    <table class="list list2" style="margin-top:0;">
+                                        <colgroup>
+                                            <col style="width: 80px;">
+                                            <col>
+                                        </colgroup>
+                                        <tbody style="">
+                                            <tr>
+                                                <th scope="row">옵션</th>
+                                                <td class="colorchip" style="overflow: initial;">
+                                                    <div class="sizecolorbox color">
+                                                        <small>옵션을 선택해주세요</small>
+                                                        
+                                                    </div>
+                                                    <!-- 반복문시작 -->
+                                                    <div class="box_colorchip">
+                                                        <div class="slide_color optSelect">
+                                                            <!-- 반복구문시작 -->
+                                                                <div class="colorbox">
+                                                                    <a href="#" class="active">
+                                                                        <img src="img/sample2.jpg">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="colorbox">
+                                                                    <a href="#" class="">
+                                                                        <img src="img/sample3.jpg">
+                                                                    </a>
+                                                                </div>
+                                                            <!-- 반복구문끝 -->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">사이즈</th>
+                                                <td style="padding-left: 0;">
+                                                    <div class="sizecolorbox">
+                                                        <small>색상을 먼저 선택해 주세요</small>
+                                                    </div>
+                                                    <ul class="size optSelect" style="min-height: 35px;">
+                                                        <li><a href="#">S</a></li>
+                                                        <li><a href="#">M</a></li>
+                                                    </ul>
+                                                    <div style="height: 10px;"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">수량</th>
+                                                <td>
+                                                    <div class="count">
+                                                    	<span class="material-icons">expand_less</span>
+                                                        <input type="text" name="num" value="1" readonly="">
+                                                        <span class="material-icons">expand_more</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                    
+                                    <!-- 토탈 -->
+                                    <div class="total">
+                                        <span>95,0000원</span>
+                                        <em>총 상품금액</em>
+                                    </div>
+                                </div>
+                                <div class="button">
+                                    <input type="button" class="cart" value="장바구니">
+                                    <input type="button" class="order" value="구매하기">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+>>>>>>> e6f04367c1e0edc089d2422050edc72a6813ecae
             </div>
         </main>
 		<th:block th:replace="~{/_footer :: footerFragment}"></th:block>

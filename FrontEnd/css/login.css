@@ -1,7 +1,11 @@
 main>.lg {
     width: 1600px;
     min-height: 600px;
+<<<<<<< HEAD
     margin: 80px auto 0 auto;
+=======
+    margin: 22px auto;
+>>>>>>> e6f04367c1e0edc089d2422050edc72a6813ecae
 }
 .lg > section {
     width: 800px;
@@ -42,10 +46,18 @@ main>.lg {
 #member > .login input {
     width: 350px;
     height: 50px;
+<<<<<<< HEAD
     padding: 10px 20px;
     border: 1px solid #e5e5e5;
     box-sizing: border-box;
 }
+=======
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    box-sizing: border-box;
+}
+#member > .login input:nth-of-type(2) {margin: 10px 0;}
+>>>>>>> e6f04367c1e0edc089d2422050edc72a6813ecae
 #member > .login input:focus {outline: 1px solid;}
 #member > .login form > button {
     position: absolute;
@@ -59,6 +71,7 @@ main>.lg {
     background: black;
     outline: none;
 }
+<<<<<<< HEAD
 .reg {
     float: left;
     width: 100%;
@@ -66,6 +79,8 @@ main>.lg {
     font-size: 13px;
     margin-top: 6px;
 }
+=======
+>>>>>>> e6f04367c1e0edc089d2422050edc72a6813ecae
 #member > .login > .loginlabel {
     float: left;
     width: 100%;
@@ -85,7 +100,11 @@ main>.lg {
 #member > .other {
     width: 500px;
     height: 75px;
+<<<<<<< HEAD
     margin: 60px auto 0 auto;
+=======
+    margin: 0 auto;
+>>>>>>> e6f04367c1e0edc089d2422050edc72a6813ecae
     text-align: center;
     background: #f7f7f7;
 }

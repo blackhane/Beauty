@@ -25,10 +25,13 @@ public interface ProductDAO {
 	
 	//view
 	public ProductVO selectProduct(String prodNo);
+<<<<<<< HEAD
 	public int addWish(WishVO vo);
 	public int addCart(CartVO vo);
 	
 	
 	public String findSize(ProductVO vo);
+=======
+>>>>>>> e6f04367c1e0edc089d2422050edc72a6813ecae
 
 }

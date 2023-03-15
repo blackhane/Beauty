@@ -74,6 +74,7 @@ public class ProductController {
 	}
 	
 	@GetMapping("shop/view")
+<<<<<<< HEAD
 	public String productView(Model model,@RequestParam("pno") String prodNo, Principal principal) {
 		ProductVO prod = service.selectProduct(prodNo);
 		String uid = null;
@@ -131,4 +132,15 @@ public class ProductController {
 		result.put("result", arr);
 		return result;
 	}
+=======
+	public String productView(Model model,@RequestParam("pno") String prodNo) {
+		
+		//상품출력
+		ProductVO prod = service.selectProduct(prodNo);
+		model.addAttribute("prod", prod);
+		
+		
+		return "product/view";
+	}
+>>>>>>> e6f04367c1e0edc089d2422050edc72a6813ecae
 }

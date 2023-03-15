@@ -87,6 +87,7 @@ public class ProductService {
 		return result;
 	}
 	
+<<<<<<< HEAD
 	//ï¿½ï¿½Ç° view 
 	public ProductVO selectProduct(String prodNo) {
 		ProductVO vo = dao.selectProduct(prodNo);
@@ -118,6 +119,11 @@ public class ProductService {
 			list.add(i);
 		}
 		return list;
+=======
+	//»óÇ° view 
+	public ProductVO selectProduct(String prodNo) {
+		return dao.selectProduct(prodNo);
+>>>>>>> e6f04367c1e0edc089d2422050edc72a6813ecae
 	}
 	
 }

@@ -70,6 +70,7 @@
 	
 	<!-- 상품 view -->
 	<select id="selectProduct" resultType="ProductVO">
+<<<<<<< HEAD
 		SELECT a.*,
 	    GROUP_CONCAT(DISTINCT b.`color` ORDER BY b.`prodNo` DESC SEPARATOR ',')  AS `color`,
 	    GROUP_CONCAT(DISTINCT b.`size`  ORDER BY FIELD (size, 'XS', 'S', 'M', 'L', 'XL', 'FREE') ASC SEPARATOR ',')  AS `size`,
@@ -95,6 +96,9 @@
 	    FROM `product` AS a
 		JOIN `product_option` AS b
 		ON a.`prodNo`=b.`prodNo` WHERE a.`prodNo`=#{prodNo} and b.`colorName`=#{color};
+=======
+		select * from `product` where `prodNo`=#{prodNo};
+>>>>>>> e6f04367c1e0edc089d2422050edc72a6813ecae
 	</select>
 	
 </mapper>
