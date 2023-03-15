@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Beauty</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/headfoot.css">
+    <script src="../js/main.js"></script>
+    <style>
+        main {
+            width: 100%;
+            height: auto;
+        }
+        table {
+            width: 100%;
+            border: 0;
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+        main > div {
+            text-align: center;
+            position: relative;
+            width: 1400px;
+            box-sizing: border-box;
+            margin: 0 auto;
+            font-size: 12px;
+        }
+
+        main > section {
+            width: 100%;
+            height: 100px;
+            line-height: 35px;
+            margin-top: 150px;
+            position: relative;
+            text-align: center;
+        }
+
+        th, td {border: 0; vertical-align: top;}
+
+        .container {
+            width: 100%;
+            max-width: 1359px;
+            margin: 30px auto 0;
+            padding: 0 50px;
+            box-sizing: border-box;
+        }
+
+        .path {
+            overflow: hidden;
+            height: 30px;
+            line-height: 30px;
+        }
+        .path ol {
+            float: right;
+        }
+        .path li {
+            float: left;
+            padding: 0 0 0 12px;
+            margin: 0 0 0 8px;
+            font-size: 12px;
+            color: #757575;
+            background: url(//img.echosting.cafe24.com/skin/base/layout/ico_path.gif) no-repeat 0 9px;
+        }
+        .path li a {
+            color: #757575;
+        }
+        .path li:first-child {
+            background: none;
+        }
+
+        main  section > span {
+            font-size: 20px;
+            color: #555;
+            font-weight: bold;
+        }
+        main  section > p {
+            position: relative;
+            margin: 10px 0 0;
+            padding: 0;
+            color: #757575;
+            font-size: 12px;
+        }
+
+        /* 내용 */
+        main table {
+            position: relative;
+            margin: 10px 0 0;
+            border-bottom: 1px solid #ebebeb;
+            color: #fff;
+            line-height: 180%;
+           
+        }
+        main table th {
+            padding: 11px 0 10px 18px;
+            border: 1px solid #ebebeb;
+            border-bottom-width: 0;
+            color: #757575;
+            text-align: left;
+            font-weight: normal;
+            background-color: #fbfafa; 
+        }
+        main table th:first-child{border-left: 0;}
+        main table td {
+            padding: 11px 10px 10px;
+            border-top: 1px solid #ebebeb;
+            color: #757575;
+            vertical-align: middle;
+            word-break: break-all;
+            word-wrap: break-word;
+            text-align: left;
+        }
+        main table td {
+            padding: 8px 10px 7px;
+        }
+
+        table td ul {text-align: right;}
+        table td ul li {
+            display: inline-block;
+            margin: 0 0 9px;
+            padding: 8px 20px 10px;
+            vertical-align: top;
+            line-height: 22px;
+            color: #666;
+        }
+        .detail {
+            padding: 30px 20px;
+            margin: -9px 0 0;
+            border-top: 1px solid #ebebeb;
+            word-break: break-all;
+            line-height: normal;
+        }
+
+        .button {
+            margin: 10px 0 40px;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* 버튼 공통 */
+        .btn {
+            display: inline-block;
+            width: 96px;
+            padding: 8px;    
+            border: 1px solid #bebebe; 
+            text-align: center;    
+        }
+        .btn:hover {
+            background-color: #e5e5e5;
+        }
+        .btnComplete:hover {    background-color: #5c5c5c}
+        .btnModify:hover {    background-color: #5c5c5c}
+        .btnNext { background: #e9e9e9; }
+        .btnWrite {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border: 1px solid #3b3c3f; 
+            background: #4b545e; 
+            color: #fff;
+        }
+
+        .btnComplete, .btnModify {
+            border: 1px solid #3b3c3f; 
+            background: #4b545e; 
+            color: #fff;
+        }
+
+        .btnAuth, .btnConfirm {
+            display: inline-block;
+            padding: 4px;    
+            border: 1px solid #bebebe; 
+            text-align: center;
+        }
+        
+
+        .gleft {float: left; text-align: left;}
+        .gright {float: right; text-align: right;}
+
+        /* 글쓰기 */
+        input, select, textarea {
+            font-size: 100%;
+            color: #353535;
+            vertical-align: middle;
+        }
+
+        select {
+            background: url(../img/pc_icon_arrow.png) no-repeat right center;
+        }
+        select {
+            height: 24px;
+            border: 1px solid #d5d5d5;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            min-width: 90px;
+            padding: 0 0 0 6px;
+        }
+        
+        input {
+            height: 18px;
+            line-height: 20px;
+            padding: 2px 4px;
+            border: 1px solid #d5d5d5;
+            color: #353535;
+            font-size: 11px;
+        }
+
+        input[type=radio] {
+            width: 13px;
+            height: 13px;
+            border: 0;
+        }
+
+        input[type=radio] + label {
+            margin: 0 8px 0 4px;
+        }
+
+    </style>
+    <script>
+        /*
+        if 비밀글 클릭
+        비밀번호,비밀번호 설정 .css('display','show');
+        if 공개글 클릭
+        비밀번호,비밀번호 설정 .css('display','none');
+        */
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="logo"><a href="#">Beauty Shop</a></div>
+            <section class="moveNavi">
+                <div class="category">
+                    <ul>
+                        <li class="cate">
+                            <a href="#" class="cate1">NEW</a>
+                        </li>
+                        <li class="cate">
+                            <a href="#" class="cate1">BEST</a>
+                        </li>
+                        <li class="cate">
+                            <a href="#" class="cate1">OUTER</a>
+                            <ul class="dep">
+                                <li><a href="#">가디건</a></li>
+                                <li><a href="#">자켓/코트</a></li>
+                                <li><a href="#">패딩/점퍼</a></li>
+                                <li><a href="#">집업/조끼</a></li>
+                            </ul>
+                        </li>
+                        <li class="cate">
+                            <a href="#" class="cate1">TOP</a>
+                            <ul class="dep">
+                                <li><a href="#">티셔츠</a></li>
+                                <li><a href="#">니트/스웨터</a></li>
+                                <li><a href="#">셔츠/블라우스</a></li>
+                                <li><a href="#">맨투맨/후드</a></li>
+                                <li><a href="#">조끼/나시</a></li>
+                            </ul>
+                        </li>
+                        <li class="cate">
+                            <a href="#" class="cate1">BOTTOM</a>
+                            <ul class="dep">
+                                <li><a href="#">스커트</a></li>
+                                <li><a href="#">데님</a></li>
+                                <li><a href="#">팬츠</a></li>
+                                <li><a href="#">슬랙스</a></li>
+                                <li><a href="#">레깅스</a></li>
+                            </ul>
+                        </li>
+                        <li class="cate">
+                            <a href="#" class="cate1">DRESS</a>
+                            <ul class="dep">
+                                <li><a href="#">원피스</a></li>
+                                <li><a href="#">투피스</a></li>
+                                <li><a href="#">점프수트</a></li>
+                            </ul>
+                        </li>
+                        <li class="cate">
+                            <a href="#" class="cate1">ETC</a>
+                            <ul class="dep">
+                                <li><a href="#">신발</a></li>
+                                <li><a href="#">가방</a></li>
+                                <li><a href="#">모자</a></li>
+                                <li><a href="#">쥬얼리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div class="search">
+                <input type="text" name="item"><ion-icon class="icon" name="search-outline"></ion-icon></input>
+            </div>
+            <div class="navigation">
+                <div><a href="#">LOGIN</a></div>
+                <div><a href="#">JOIN</a></div>
+                <div><a href="#">CART</a></div>
+                <div><a href="#">MYPAGE</a></div>
+                <div><a href="#">NOTICE</a></div>
+                <div><a href="#">Q&A</a></div>
+                <div><a href="#">REVIEW</a></div>
+                <div><a href="#">EVENT</a></div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="path">
+                    <ol>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">Q&A</a></li>
+                    </ol>
+                </div>
+                <section>
+                    <span>Q&A</span>
+                    <p>상품Q&A 입니다.</p>
+                </section>
+                <table border="1">
+                    <colgroup>
+                        <col style="width: 130px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <tr>
+                        <th>제목</th>
+                        <td>
+                            <select name="board_category" id="board_category">
+                                <option value="1">상품문의</option>
+                                <option value="1">배송문의</option>
+                                <option value="1">교환/반품/취소문의</option>
+                                <option value="1">기타문의</option>
+                            </select>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>작성자</th>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <th>이메일</th>
+                        <td><input type="email"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <textarea name="" id="" cols="100" rows="10"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>비밀글 설정</th>
+                        <td>
+                            <label><input type="radio" name="open" checked>공개글</label>
+                            <label><input type="radio" name="open">비밀글</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>비밀번호</th>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <th>비밀번호설정</th>
+                        <td><input type="password"></td>
+                    </tr>
+                </table>
+                <div class="button">
+                    <span class="gleft">
+                        <a href="#" class="btn btnList">목록</a>
+                    </span>
+                    <span class="gright">
+                        <a href="#" class="btn btnModify">수정</a>
+                        <a href="#" class="btn btnCancel">취소</a>
+                    </span>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="up"><ion-icon class="upIcon" name="chevron-up-outline"></ion-icon></div>
+            <div>
+                <ul>
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">이용안내</a></li>
+                </ul>
+                <section>
+                    <strong>CUSTOMER CENTER</strong><br/>
+                    <span>T. 0000-0000</span>
+                    <ul>
+                        <li>MON-FRI AM 11:00 - PM 07:00</li>
+                        <li>점심시간 PM 12:00 - PM 01:00</li>
+                        <li>SAT.SUN.HOLIDAY <span>closed</span></li>
+                    </ul>
+                    <ul>
+                        <li>농협 000-0000-0000-00</li>
+                        <li>우리 0000-000-000000</li>
+                        <li>예금주 : 뷰티샵</li>
+                    </ul>
+                </section>
+                <section>
+                    <strong>RETURN/EXCHANGE</strong>
+                    <ul>
+                        <li>교환/반품주소 : 부산 부산진구 중앙대로775번길 5 부산서면우체국</li>
+                        <li>우체국택배 0000-0000</li>
+                    </ul>
+                    <ul>
+                        <li>* 고객센터를 통하여 먼저 접수 후 상품을 보내주셔야하며,</li>
+                        <li>지정택배사를 이용해주시기 바랍니다.</li>
+                    </ul>
+                </section>
+                <section>
+                    <strong>MEMBER</strong>
+                    <ul>
+                        <li><a href="#">장바구니</a></li>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">주문조회</a></li>
+                        <li><a href="#">회원정보수정</a></li>
+                        <li><a href="#">관심상품</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <strong>COMMUNITY</strong>
+                    <ul>
+                        <li><a href="#">NOTICE</a></li>
+                        <li><a href="#">Q&A</a></li>
+                        <li><a href="#">REVIEW</a></li>
+                        <li><a href="#">EVENT</a></li>
+                    </ul>
+                </section>
+                <section class="footerinfo">
+                    <ul>
+                        <li>COMPANY : 뷰티샵 OWNER : 홍길동 TEL : 0000-0000 ADDRESS : 부산 부산진구 서면로 XX빌딩</li>
+                        <li>BUSINESS LICENSE : 000-00-00000 ONLINE ORDER LICENSE : 0000-가나다라-0000 [사업자정보확인]</li>
+                        <li>CHIEF PRIVACY OFFICER : 홍길동 EMAIL : email@naver.com</li>
+                    </ul>
+                </section>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

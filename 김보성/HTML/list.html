@@ -8,15 +8,493 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
     <link rel="stylesheet" href="./css/headfoot.css">
     <link rel="stylesheet" href="./css/list.css">
     <script src="./js/main.js"></script>
  
+<<<<<<< Updated upstream
+=======
+    <style>
+        /*공통*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul, ol {list-style: none;}
+        a {text-decoration: none; color: black;}
+        #wrap {width: 100%; height: auto}
+
+        /*헤더*/
+        header {
+            width: 100%;
+            height: 120px; 
+            box-sizing: border-box;
+            background: #fff;
+            position: fixed;
+            top: 0;
+            z-index: 3;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .logo > a {
+            font-weight: bold;
+            line-height: 120px;
+            margin-left: 50px;
+            font-size: 20px;
+            color: #212121;
+        }
+        .category {
+            width: 800px;
+            height: 100%;
+            margin: 0 auto;
+            margin-top: 80px;
+        }
+        .category > ul > li {
+            width: 12.5%;
+            height: 45px;
+            float: left;
+            text-align: center;
+            position: relative;
+        }
+        .category > ul > li > a {
+            display: inline-block;
+            height: 100%;
+            font-size: 14px;
+        }
+        .dep {
+            display: none;
+            position: absolute;
+            top: 90px;
+            left: 0px;
+            width: 130px;
+            height: auto;
+            margin-top: -51px;
+            padding: 15px;
+            box-sizing: border-box;
+            border: 1px solid #e5e5e5;
+            background: #fff;
+            opacity: 0.8;
+        }
+        .dep > li {
+            text-align: left;
+            margin-top: 5px;
+        }
+        .dep > li:first-child {margin-top: 0px;}
+        .dep > li > a {font-size: 14px;}
+        .dep > li > a:hover {color: #c59e51;}
+        .category > table tr > td {width: 16.6%; text-align: center;}
+        .category > table tr > td > a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            font-size: 14px;
+            color: #212121;
+        }
+        .category > table tr > td > ul {
+            background: gray;
+        }
+        .navigation {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            width: 600px;
+            height: 25px;
+            z-index: 3;
+        }
+        .navigation > div {float: left; margin-right: 20px;}
+        .navigation > div > a {font-size: 12px; color: #212121;}
+        .navigation > div > a:hover {color: #999;}
+        .search {
+            position: absolute;
+            top: 80px;
+            right: 200px;
+        }
+        .search input {
+            width: 150px;
+            height: 30px;
+            background: #f5f5f5;
+            border: none;
+            border-radius: 20px;
+            outline: none;
+            padding-left: 10px;
+            color: #212121;
+            position: relative;
+        }
+        .icon {
+            position: absolute;
+            top: 6px;
+            right: 7px;
+            cursor: pointer;
+        }
+        /*푸터*/
+        footer {
+            width: 100%;
+            height: 500px;
+            border-top: 1px solid #e5e5e5;
+            background: #f9f9f9;
+            overflow: hidden;
+        }
+        footer > div {
+            width: 1400px;
+            height: auto;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        footer > div > ul {
+            width: 600px;
+            margin-top: 30px;
+            overflow: hidden;
+        }
+        footer > div > ul > li {
+            float: left;
+            margin-right: 30px;
+        }
+        footer > div > ul > li > a {
+            color: #777;
+            font-size: 14px;
+        }
+        footer > div > ul > li > a:hover {color: #212121;} 
+        footer > div > section {
+            float: left;
+            margin-top: 30px;
+            margin-right: 150px;
+            line-height: 30px;
+            color: #555;
+        }
+        footer > div > section > span {
+            display: inline;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        footer > div > section > ul {margin-bottom: 10px;}
+        footer > div > section > ul > li {
+            font-size: 12px;
+            line-height: 25px;
+            color: #777;
+        }
+        footer > div > section > ul > li > span {color: #c36565;}
+        footer > div > section > ul > li > a {
+            font-size: 12px;
+            color: #777;
+        }
+        footer > div > section > ul > li > a:hover {color: #212121;}
+        .footerinfo {clear: both;}
+        footer > .up {
+            display: none;
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            border-radius: 30px;
+            text-align: center;
+            line-height: 60px;
+            cursor: pointer;
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+        }
+        .upIcon {width: 25px; height: 25px;}
+
+        /* 리스트 메인 */
+        main {
+            width: 100%;
+        }
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            width: 100%;
+            height: 800px;
+        }
+        .banner1 {
+            background: url("./img/MainBanner1.png");
+            background-size: cover;
+        }
+        .banner2 {
+            background: url("./img/MainBanner2.jpg");
+            background-size: cover;
+            background-position-y: -35px;
+        }
+        .banner3 {
+            background: url("./img/MainBanner3.jpg");
+            background-size: cover;
+            background-position: -25px 25px;
+        }
+        .swiper-pagination-bullet-active {background: #fff;}
+        main > section {
+            width: 1600px;
+            height: auto;
+            margin: 50px auto;
+            overflow: hidden;
+            text-align: center;
+        }
+        main > article {
+            width: 100%;
+            height: 450px;
+            margin-top: 100px;
+            background: #faf6f4;
+            text-align: center;
+            padding: 30px 0;
+        }
+        main > article > span {
+            display: inline-block;
+            width: 100%;
+            color: #555;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        main > article > div.swiper {
+            display: inline-block;
+            width: 1400px;
+            height: 300px;
+            padding-top: 60px;
+            overflow: hidden;
+        }
+        main > article > div.swiper .swiper-slide > ul {
+            overflow: hidden;
+            width: 1200px;
+            padding-left: 10px;
+            margin: 0 auto;
+        }
+        main > article > div.swiper .swiper-slide > ul > li > .bestItem {
+            float: left;
+            width: 19%; 
+            height: 300px;
+            margin: 0 5px;
+            background: #999;
+        }
+        main > article > div.swiper .swiper-slide > ul > li > .bestItem img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 100;
+        }
+        main > article > div.swiper .swiper-slide > ul > li > .bestItem img:hover {
+            background: #fff;
+            opacity: 0.5;
+        }
+        main > article > div.swiper .swiper-pagination {top: 0px; height: 25px;}
+        main > article > div.swiper .swiper-pagination-bullet {
+            width: 100px;
+            display: inline-block;
+            height: 22px;
+            font-size: 12px;
+            font-weight: bold;
+            background: none;
+            border-radius: 0px;
+        }
+        main > article > div.swiper .swiper-pagination-bullet-active > span {padding-bottom: 5px; border-bottom: 2px solid #edd4c7;}
+        main > article > div.swiper > .swiper-button-prev {color: #999; margin-left: 50px; margin-top: 10px;}
+        main > article > div.swiper > .swiper-button-next {color: #999; margin-right: 50px; margin-top: 10px;}
+        main > section > div > div {
+            display: inline-block;
+            width: 20%;
+            height: 500px;
+            margin: 10px;
+            margin-bottom: 30px;
+            box-sizing: border-box;
+        }
+        main > section > span {
+            display: inline-block;
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 13px;
+            margin-bottom: 40px;
+        }
+        .product > a > img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+        .product > span {
+            display: inline-block; 
+            width: 100%;
+            text-align: left;
+        }
+        .colorCodeBox {text-align: left;}
+        .colorCode {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border: 1px solid #efefef;
+            border-radius: 20px;
+
+        }
+        .name {
+            display: inline-block; 
+            width: 100%;
+            text-align: left;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 6px 0;
+            margin-bottom: 6px;
+            color: #212121;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .oriPrice {
+            font-size: 16px;
+            font-weight: bold;
+            color: #999; 
+            text-decoration: line-through;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #555;
+        }
+        .discount {
+            font-size: 20px;
+            font-weight: bold;
+            color: pink;
+            margin-left: 10px; 
+        }
+        .descript {
+            font-size: 12px;
+            color: #999;
+            margin-top: 6px;
+        }
+
+        .title2 {
+            display: inline-block;
+            position: relative;
+            width: 100px;
+            height: auto;
+            top: 2px;
+            margin-top: 50px;
+        }
+        .title2 h2 {
+            font-weight: bold;
+            font-weight: 900;
+            font-size: 18px;
+            color: #545454;
+            letter-spacing: 2px;
+        }
+        .menuCategory {
+            display: inline-block;
+            font-size: 0;
+            line-height: 0;
+            text-align: center;
+        }
+
+        .menuCategory > li {
+            display: inline-block;
+            margin: 0 10px 0;
+            font-size: 12px;
+        }
+
+        .menuCategory > li > a {
+            color: #a8a8a8;
+            padding: 7px 0 5px;
+        }
+
+        .headcate {
+            text-align: left;
+            display: inline-block;
+            width: 100%;
+            height: 80px;
+            margin: 90px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .s_title {
+            display: inline-block;
+            margin: 0 10px 0;
+        }
+        .s_title a {
+            color: #a8a8a8;
+            padding: 7px 0 5px;
+            font-size: 12px;
+        }
+        .headcate .selected > a {
+            border-bottom: 2px solid #e0d8d0;
+        }
+        .headcate .selected a {
+            color: #545454 !important;
+            font-weight: bold
+        }
+
+        .menuNomal {
+            width: 1600px;
+            height: auto;
+            margin: 30px 0;
+        }
+
+        .totalmenu {
+            overflow: hidden;
+            margin: 20px 0 0;
+            text-align: right;
+            line-height: 38px;
+            
+        }
+
+        .totalmenu > .prdCount {
+            float: left;
+            padding: 0;
+        }
+
+        strong { font-weight: bold;}
+        .totalmenu > ul {
+            display: inline;
+            margin: 0;
+        }
+        .totalmenu > ul > li {
+            position: relative;
+            display: inline;
+            padding: 0 0 0 26px;
+            color: #a5a5a5;
+        }
+
+    </style>
+    <script>
+        $(function(){
+            $('.cate').mouseenter(function(){
+                $(this).children('ul').css('display','block');
+                $(this).children('.cate1').css('color',"#c59e51");
+                
+                
+            });
+            $('.cate').mouseleave(function(){
+                $(this).children('ul').css('display','none');
+                $(this).children('.cate1').css('color',"#212121");
+            });
+            $(window).scroll(function(){
+                let now = $(document).scrollTop();
+                console.log(now);
+                if(now >= 200){
+                    $('.up').fadeIn(500);
+                }else{
+                    $('.up').fadeOut(500);
+                }
+            });
+            $('.up').click(function(){
+                $('html, body').animate({
+                    scrollTop: 0
+                },300);
+            });
+        });
+    </script>
+>>>>>>> 9c6e9ee7d8685c8cfd1fba3b3571f1d0843971a7
+=======
+>>>>>>> Stashed changes
 </head>
 <body>
     <div id="wrap">
         <header>
             <div class="logo"><a href="#">Beauty Shop</a></div>
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
             <section class="moveNavi">
                 <div class="category">
                     <ul>
@@ -77,6 +555,77 @@
             </section>
             <div class="search">
                 <input type="text" name="item"><ion-icon class="icon" name="search-outline"></ion-icon></input>
+<<<<<<< Updated upstream
+=======
+            <div class="category">
+                <ul>
+                    <li class="cate">
+                        <a href="#" class="cate1">NEW</a>
+                    </li>
+                    <li class="cate">
+                        <a href="#" class="cate1">BEST</a>
+                    </li>
+                    <li class="cate">
+                        <a href="#" class="cate1">OUTER</a>
+                        <ul class="dep">
+                            <li><a href="#">가디건</a></li>
+                            <li><a href="#">자켓/코트</a></li>
+                            <li><a href="#">패딩/점퍼</a></li>
+                            <li><a href="#">집업/조끼</a></li>
+                        </ul>
+                    </li>
+                    <li class="cate">
+                        <a href="#" class="cate1">TOP</a>
+                        <ul class="dep">
+                            <li><a href="#">티셔츠</a></li>
+                            <li><a href="#">니트/스웨터</a></li>
+                            <li><a href="#">셔츠/블라우스</a></li>
+                            <li><a href="#">맨투맨/후드</a></li>
+                            <li><a href="#">조끼/나시</a></li>
+                        </ul>
+                    </li>
+                    <li class="cate">
+                        <a href="#" class="cate1">BOTTOM</a>
+                        <ul class="dep">
+                            <li><a href="#">스커트</a></li>
+                            <li><a href="#">데님</a></li>
+                            <li><a href="#">팬츠</a></li>
+                            <li><a href="#">슬랙스</a></li>
+                            <li><a href="#">레깅스</a></li>
+                        </ul>
+                    </li>
+                    <li class="cate">
+                        <a href="#" class="cate1">SKIRT</a>
+                        <ul class="dep">
+                            <li><a href="#">미니</a></li>
+                            <li><a href="#">미디/롱</a></li>
+                        </ul>
+                    </li>
+                    <li class="cate">
+                        <a href="#" class="cate1">DRESS</a>
+                        <ul class="dep">
+                            <li><a href="#">미니</a></li>
+                            <li><a href="#">미디/롱</a></li>
+                        </ul>
+                    </li>
+                    <li class="cate">
+                        <a href="#" class="cate1">ACC</a>
+                        <ul class="dep">
+                            <li><a href="#">목도리/장갑</a></li>
+                            <li><a href="#">양말</a></li>
+                            <li><a href="#">벨트</a></li>
+                            <li><a href="#">쥬얼리</a></li>
+                            <li><a href="#">시계</a></li>
+                            <li><a href="#">모자</a></li>
+                            <li><a href="#">홈웨어</a></li>
+                            <li><a href="#">슈즈</a></li>
+                            <li><a href="#">백</a></li>
+                        </ul>
+                    </li>
+                </ul>
+>>>>>>> 9c6e9ee7d8685c8cfd1fba3b3571f1d0843971a7
+=======
+>>>>>>> Stashed changes
             </div>
             <div class="navigation">
                 <div><a href="#">LOGIN</a></div>
@@ -88,6 +637,8 @@
                 <div><a href="#">REVIEW</a></div>
                 <div><a href="#">EVENT</a></div>
             </div>
+<<<<<<< Updated upstream
+<<<<<<< HEAD
         </header>
 
         <main>
@@ -251,6 +802,180 @@
             </script>
             
             <!-- 리스트 -->
+=======
+            <div class="search">
+                <input type="text" name="item"><ion-icon class="icon" name="search-outline"></ion-icon></input>
+            </div>
+=======
+>>>>>>> Stashed changes
+        </header>
+
+        <main>
+            <!-- 베스트상품 -->
+            <article>
+                <span>OUTER BEST ITEMS</span>
+                <div class="swiper swiperItem">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <ul>
+                                <li>
+                                    <div class="bestItem">
+                                        <a href="#"><img src="./img/sample6.jpg" alt="상품"></a>
+                                        <div class="bestDescript">
+                                            <div class="colorCodeBox">
+                                                <span class="colorCode" style="background: #fac8c8;"></span>
+                                                <span class="colorCode" style="background: #fffdf0;"></span>
+                                                <span class="colorCode" style="background: #fff5a0;"></span>
+                                                <span class="colorCode" style="background: #3a55ed;"></span>
+                                            </div>
+                                            <span>상품명</span><br/>
+                                            <span>15,000원</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bestItem">
+                                        <a href="#"><img src="./img/sample7.jpg" alt="상품"></a>
+                                        <div class="bestDescript">
+                                            <div class="colorCodeBox">
+                                                <span class="colorCode" style="background: #fac8c8;"></span>
+                                                <span class="colorCode" style="background: #fffdf0;"></span>
+                                                <span class="colorCode" style="background: #fff5a0;"></span>
+                                                <span class="colorCode" style="background: #3a55ed;"></span>
+                                            </div>
+                                            <span>상품명</span><br/>
+                                            <span>15,000원</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bestItem">
+                                        <a href="#"><img src="./img/sample8.jpg" alt="상품"></a>
+                                        <div class="bestDescript">
+                                            <div class="colorCodeBox">
+                                                <span class="colorCode" style="background: #fac8c8;"></span>
+                                                <span class="colorCode" style="background: #fffdf0;"></span>
+                                                <span class="colorCode" style="background: #fff5a0;"></span>
+                                                <span class="colorCode" style="background: #3a55ed;"></span>
+                                            </div>
+                                            <span>상품명</span><br/>
+                                            <span>15,000원</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bestItem">
+                                        <a href="#"><img src="./img/sample9.jpg" alt="상품"></a>
+                                        <div class="bestDescript">
+                                            <div class="colorCodeBox">
+                                                <span class="colorCode" style="background: #fac8c8;"></span>
+                                                <span class="colorCode" style="background: #fffdf0;"></span>
+                                                <span class="colorCode" style="background: #fff5a0;"></span>
+                                                <span class="colorCode" style="background: #3a55ed;"></span>
+                                            </div>
+                                            <span>상품명</span><br/>
+                                            <span>15,000원</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bestItem">
+                                        <a href="#"><img src="./img/sample6.jpg" alt="상품"></a>
+                                        <div class="bestDescript">
+                                            <div class="colorCodeBox">
+                                                <span class="colorCode" style="background: #fac8c8;"></span>
+                                                <span class="colorCode" style="background: #fffdf0;"></span>
+                                                <span class="colorCode" style="background: #fff5a0;"></span>
+                                                <span class="colorCode" style="background: #3a55ed;"></span>
+                                            </div>
+                                            <span>상품명</span><br/>
+                                            <span>15,000원</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul>
+                                <li><div class="bestItem"><a href="#"><img src="./img/sample7.jpg" alt="상품"></a></div></li>
+                                <li><div class="bestItem"><a href="#"><img src="./img/sample7.jpg" alt="상품"></a></div></li>
+                                <li><div class="bestItem"><a href="#"><img src="./img/sample7.jpg" alt="상품"></a></div></li>
+                                <li><div class="bestItem"><a href="#"><img src="./img/sample7.jpg" alt="상품"></a></div></li>
+                                <li><div class="bestItem"><a href="#"><img src="./img/sample7.jpg" alt="상품"></a></div></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul>
+                                <li><div class="bestItem"><a href="#"><img src="./img/sample8.jpg" alt="상품"></a></div></li>
+                                <li><div class="bestItem"><a href="#"><img src="./img/sample8.jpg" alt="상품"></a></div></li>
+                                <li><div class="bestItem"><a href="#"><img src="./img/sample8.jpg" alt="상품"></a></div></li>
+                                <li><div class="bestItem"><a href="#"><img src="./img/sample8.jpg" alt="상품"></a></div></li>
+                                <li><div class="bestItem"><a href="#"><img src="./img/sample8.jpg" alt="상품"></a></div></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul>
+                                <li><div class="bestItem"><a href="#"><img src="./img/sample9.jpg" alt="상품"></a></div></li>
+                                <li><div class="bestItem"><a href="#"><img src="./img/sample9.jpg" alt="상품"></a></div></li>
+                                <li><div class="bestItem"><a href="#"><img src="./img/sample9.jpg" alt="상품"></a></div></li>
+                                <li><div class="bestItem"><a href="#"><img src="./img/sample9.jpg" alt="상품"></a></div></li>
+                                <li><div class="bestItem"><a href="#"><img src="./img/sample9.jpg" alt="상품"></a></div></li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul>
+                                <li><div class="bestItem"><a href="#"><img src="./img/sample10.jpg" alt="상품"></a></div></li>
+                                <li><div class="bestItem"><a href="#"><img src="./img/sample10.jpg" alt="상품"></a></div></li>
+                                <li><div class="bestItem"><a href="#"><img src="./img/sample10.jpg" alt="상품"></a></div></li>
+                                <li><div class="bestItem"><a href="#"><img src="./img/sample10.jpg" alt="상품"></a></div></li>
+                                <li><div class="bestItem"><a href="#"><img src="./img/sample10.jpg" alt="상품"></a></div></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </article>
+            <script>
+                
+                const swiper2 = new Swiper('.swiperItem', {
+                    // Optional parameters
+                    slidesPerView: 1,
+                    loop: true,
+    
+                    // If we need pagination
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                        renderBullet: function (index, className) {
+                        return '<div class="' + className + '"><span>' + (bullet[index]) + '</span></div>';
+                        }
+                    },
+    
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+    
+                    // And if we need scrollbar
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                    },
+    
+                    autoplay: {     //자동슬라이드 (false-비활성화)
+                    delay: 5000, // 시간 설정
+                    disableOnInteraction: false, // false-스와이프 후 자동 재생
+                    },
+                });
+            </script>
+            
+            <!-- 리스트 -->
+<<<<<<< Updated upstream
+            
+>>>>>>> 9c6e9ee7d8685c8cfd1fba3b3571f1d0843971a7
+=======
+>>>>>>> Stashed changes
             <section>
                 <div class="headcate">
                     <div class="title2">
@@ -263,6 +988,10 @@
                         <li><a href="#">패딩/점퍼</a></li>
                         <li><a href="#">집업/조끼</a></li>
                     </ul>
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
                     <div class="item-info">
                         <div class="item-total">
                             Total <b>100</b> items
@@ -275,9 +1004,35 @@
                             <li><a href="#">많이 본 순</a></li>
                         </ul>
                     </div>
+<<<<<<< Updated upstream
                 </div>
 
                 <div>
+=======
+=======
+>>>>>>> Stashed changes
+                </div>
+
+                <div>
+<<<<<<< Updated upstream
+                    <div class="menuNomal">
+                        <div class="totalmenu">
+                            <p class="prdCount">
+                                TOTAL <strong>92</strong> PRODUCT
+                            </p>
+                            <ul>
+                                <li class="record"><a href="#">신상품</a></li>
+                                <li class="record"><a href="#">상품명</a></li>
+                                <li class="record"><a href="#">낮은가격</a></li>
+                                <li class="record"><a href="#">높은가격</a></li>
+                                <li class="record"><a href="#">인기상품</a></li>
+                                <li class="record"><a href="#">사용후기</a></li>
+                            </ul>
+                        </div>
+                    </div>
+>>>>>>> 9c6e9ee7d8685c8cfd1fba3b3571f1d0843971a7
+=======
+>>>>>>> Stashed changes
                     <div class="product">
                         <a href="#"><img src="./img/sample1.jpg" alt="상품"></a>
                         <div class="colorCodeBox">
@@ -446,6 +1201,10 @@
                         <span class="price">15,000원<span class="discount">25%</span></span>
                         <span class="descript">상품설명</span>
                     </div>
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
                     <div class="center">
                         <div class="pagination">
                         <a href="#">&laquo;</a>
@@ -458,6 +1217,16 @@
                         </div>
                     </div>
                     
+<<<<<<< Updated upstream
+=======
+                    <nav class="paging-block">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </nav>
+>>>>>>> 9c6e9ee7d8685c8cfd1fba3b3571f1d0843971a7
+=======
+>>>>>>> Stashed changes
                 </div>
             </section>
         </main>
