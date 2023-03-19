@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- namespace = mapper파일의 아이디 값 -->
-<mapper namespace="kr.co.beauty.dao.AdminDAO">
+<mapper namespace="kr.co.beautyshop.dao.AdminDAO">
 	<!-- 상품 등록 -->
 	<insert id="insertProduct" parameterType="Product1VO" useGeneratedKeys="true" keyProperty="prodNo">
 		insert into `product` set

@@ -90,7 +90,7 @@ $(function() {
 		console.log(jsonData);
 		console.log('here2');
 		$.ajax({
-			url: '/Beauty/member/find1',
+			url: '/beautyshop/member/find1',
 			type: 'post',
 			data: jsonData,
 			dataType: 'json',
@@ -125,7 +125,7 @@ $(function() {
 			alert('인증번호가 발송되었습니다.');
 		}
 		$.ajax({
-			url: '/Beauty/member/emailAuth',
+			url: '/beautyshop/member/emailAuth',
 			method: 'post',
 			data: { "email": email },
 			dataType: 'json',
@@ -185,7 +185,7 @@ $(function() {
 		console.log(jsonData);
 		console.log('here2');
 		$.ajax({
-			url : '/Beauty/member/find2',
+			url : '/beautyshop/member/find2',
 			type : 'post',
 			data : jsonData,
 			dataType : 'json',

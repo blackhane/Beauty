@@ -5,7 +5,7 @@ $(function(){
 		e.preventDefault();
 		if(confirm('위시리스트를 비우시겠습니까?')){
 			$.ajax({
-				url:'/Beauty/myshop/deleteAllWish',
+				url:'/beautyshop/myshop/deleteAllWish',
 				type:'POST',
 				success:function(data){
 					if(data == 1){

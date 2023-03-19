@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- namespace = mapper파일의 아이디 값 -->
-<mapper namespace="kr.co.beauty.dao.MainDAO">
+<mapper namespace="kr.co.beautyshop.dao.MainDAO">
 	<select id="selectNewItem" resultType="productVO">
 		SELECT a.*,
 		GROUP_CONCAT(DISTINCT b.`color` ORDER BY b.`prodNo` DESC SEPARATOR ', ')  AS `color`,

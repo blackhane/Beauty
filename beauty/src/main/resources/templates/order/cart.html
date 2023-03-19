@@ -49,7 +49,7 @@
             		}
             		let prodNo = parseInt($(this).parent().children('input').val());
             		$.ajax({
-            			url:'/Beauty/order/addWishFromCart',
+            			url:'/beautyshop/order/addWishFromCart',
             			type:'POST',
             			data:{'prodNo': prodNo},
             			dataType:'json',

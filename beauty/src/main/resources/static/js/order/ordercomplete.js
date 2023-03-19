@@ -3,10 +3,10 @@
  */
 $(function(){
 	$('.continue').click(function(){
-		location.href="/Beauty/index";
+		location.href="/beautyshop/index";
 	});
 	$('.detail').click(function(){
-		location.href="/Beauty/myshop/orderDetail";
+		location.href="/beautyshop/myshop/orderDetail";
 	});
 	
 	$('.order').children('article.orderItem').slice(0,1).show();

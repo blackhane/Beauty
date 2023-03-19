@@ -63,7 +63,7 @@ $(function(){
 		
 		let cartNo = $(this).parent().parent().parent().children('td:nth-child(1)').children('input[type=checkbox]').val();
 		$.ajax({
-			url:'/Beauty/order/cartIncrease',
+			url:'/beautyshop/order/cartIncrease',
 			type:'POST',
 			data:{'cartNo': cartNo},
 			dataType:'json'
@@ -86,7 +86,7 @@ $(function(){
 		
 		let cartNo = $(this).parent().parent().parent().children('td:nth-child(1)').children('input[type=checkbox]').val();
 		$.ajax({
-			url:'/Beauty/order/cartDecrease',
+			url:'/beautyshop/order/cartDecrease',
 			type:'POST',
 			data:{'cartNo': cartNo},
 			dataType:'json'
@@ -110,7 +110,7 @@ $(function(){
 		let tr = $(this).parent().parent();
 		let cartNo = parseInt($(this).parent().parent().children('td:first-child').children('input').val());
 		$.ajax({
-			url:'/Beauty/order/deleteSelectedCart',
+			url:'/beautyshop/order/deleteSelectedCart',
 			type:'GET',
 			data:{'cartNo': cartNo},
 			dataType:'json',
@@ -141,7 +141,7 @@ $(function(){
 		}
 		if(confirm('장바구니를 비우시겠습니까?')){
 			$.ajax({
-				url:'/Beauty/order/deleteAllCart',
+				url:'/beautyshop/order/deleteAllCart',
 				type:'POST',
 				data:{},
 				dataType:'json',
@@ -178,7 +178,7 @@ $(function(){
 			}
 		});
 		$.ajax({
-			url:'/Beauty/order/deleteSelectedCart',
+			url:'/beautyshop/order/deleteSelectedCart',
 			type:'POST',
 			data:{'chkList': chkList},
 			dataType:'json',

@@ -221,12 +221,12 @@ $(function(){
 			'payment' : payment
 		}
 		$.ajax({
-			url : '/Beauty/order/orderform/type1',
+			url : '/beautyshop/order/orderform/type1',
 			method : 'POST',
 			data : jsonData,
 			dataType : 'JSON',
 			success : function(data){
-				location.href="/Beauty/order/ordercomplete?ordNo="+data.result;
+				location.href="/beautyshop/order/ordercomplete?ordNo="+data.result;
 			}
 		});
 	});

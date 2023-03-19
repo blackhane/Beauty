@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- 강중현 -->
-<mapper namespace="kr.co.beauty.dao.MemberDAO">
+<mapper namespace="kr.co.beautyshop.dao.MemberDAO">
 	<select id="selectTerms" resultType="MemberVO">
 		select * from `terms`;
 	</select>

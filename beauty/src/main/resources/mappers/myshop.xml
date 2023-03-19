@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- 김동근 -->
-<mapper namespace="kr.co.beauty.dao.MyshopDAO">
+<mapper namespace="kr.co.beautyshop.dao.MyshopDAO">
 
 	<!-- 주문/배송 -->
 	<select id="selectOrderList" resultType="MyorderVO">

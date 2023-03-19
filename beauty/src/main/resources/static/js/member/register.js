@@ -141,7 +141,7 @@ $(function() {
 			alert('인증번호가 발송되었습니다.');
 		}
 		$.ajax({
-			url: '/Beauty/member/emailAuth',
+			url: '/beautyshop/member/emailAuth',
 			method: 'post',
 			data: { "email": email },
 			dataType: 'json',

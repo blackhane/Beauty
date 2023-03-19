@@ -121,7 +121,7 @@
 			}
 			
 			$.ajax({
-				url : '/Beauty/addWish',
+				url : '/beautyshop/addWish',
 				method : 'POST',
 				data : jsonData,
 				dataType : "JSON",
@@ -139,7 +139,7 @@
 			check();
 			let jsonArray = resultArray();
 			$.ajax({
-				url : '/Beauty/addCart',
+				url : '/beautyshop/addCart',
 				method : 'POST',
 				data : {jsonArray : JSON.stringify(jsonArray)},
 				dataType : 'JSON',
@@ -156,13 +156,13 @@
 			let jsonArray = resultArray();
 			console.log(jsonArray);
 			$.ajax({
-				url : '/Beauty/addOrder',
+				url : '/beautyshop/addOrder',
 				method : 'POST',
 				data : {jsonArray : JSON.stringify(jsonArray)},
 				dataType : 'JSON',
 				success : function(data){
 					if(data.result > 0){
-						location.href = "/Beauty/order/orderform";
+						location.href = "/beautyshop/order/orderform";
 					}
 				}
 			});

@@ -5,7 +5,7 @@ $(function(){
 		e.preventDefault();
 		let pass = $('#pass').val();
 		$.ajax({
-			url:'/Beauty/myshop/checkPW',
+			url:'/beautyshop/myshop/checkPW',
 			type:'POST',
 			data:{'pass': pass},
 			dataType:'json',
@@ -42,7 +42,7 @@ $(function(){
 		}
 		
 		$.ajax({
-			url:'/Beauty/myshop/updateMember',
+			url:'/beautyshop/myshop/updateMember',
 			type:'POST',
 			data: JSON.stringify(vo),
 			dataType:'json',
@@ -65,7 +65,7 @@ $(function(){
 		e.preventDefault();
 		if(confirm('정말 삭제하시겠습니까?')) {
 			$.ajax({
-				url:'/Beauty/myshop/deleteMember',
+				url:'/beautyshop/myshop/deleteMember',
 				type:'POST',
 				data:{},
 				dataType:'json',
