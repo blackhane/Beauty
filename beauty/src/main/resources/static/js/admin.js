@@ -92,7 +92,7 @@ $(document).ready(function(){
 			}
 		});
   	}
-	
+  	
 	//페이징 처리
 	function page(){
 		if(window.location.pathname !== "/Beauty/admin/product/search"){

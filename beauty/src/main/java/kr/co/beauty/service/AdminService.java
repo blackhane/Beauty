@@ -22,7 +22,7 @@ public class AdminService {
 
 	// 상품등록
 	public int insertProduct(Product1VO vo) {
-		// 파일 업로드
+		// 이미지 파일 업로드
 		fileUpload(vo);
 
 		// 할인된 가격 등록
@@ -39,6 +39,7 @@ public class AdminService {
 	public int insertOption(int param1, List<String> colorArr, List<String> colorNameArr, List<String> sizeArr) {
 		int result = 0;
 
+		//상품번호당 색상코드,색상이름,사이즈 등록
 		for (int i = 0; i < colorArr.size(); i++) {
 			String param2 = colorArr.get(i);
 			String param3 = colorNameArr.get(i);
@@ -70,13 +71,13 @@ public class AdminService {
 	public List<Product1VO> searchProduct(String[] arg0, String arg1, String arg2, int arg3) {
 		return dao.searchProduct(arg0, arg1, arg2, arg3);
 	}
-	
+
+	/* 검색결과 창 페이징 처리 */
 	//검색한 상품 개수 세기
 	public int selectCountProductByKeyword(String param2, String arg2){
 		return dao.selectCountProductByKeyword(param2, arg2);
 	}
 
-	/* 검색결과 창 페이징 처리 */
 	// 현재 페이지 번호
 	public int getCurrentPage(String pg) {
 		int currentPage = 1;
@@ -126,7 +127,7 @@ public class AdminService {
 		return groups;
 	}
 
-	// 파일 업로드
+	// 이미지 파일 업로드
 	@Value("${spring.servlet.multipart.location}")
 	private String uploadPath;
 
