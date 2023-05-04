@@ -43,6 +43,31 @@ $(function(){
 		getOrderList(start, end);
 	});
 	
+	/* 리뷰 작성, 구매 확정 버튼 */
+	$(document).on('click', 'table div.tooltip > .btnConfirm', function(){
+		if(confirm('구매를 확정 지으시겠습니까?')){
+			let ordNo = parseInt($(this).parent().children('input[type=hidden]').val());
+			$.ajax({
+				url:'/Beauty/myshop/orderConfirm',
+				type:'POST',
+				data: {'ordNo':ordNo},
+				dataType:'json',
+				beforeSend: function(xhr){
+	        		xhr.setRequestHeader(header, token);
+			    },
+				success:function(data){
+					//버튼 변경 구매 확정 -> 리뷰 작성
+					getOrderList(start, end);
+					alert('구매가 확정되었습니다!');
+				}
+			});
+		}else{
+			return false;
+		}
+	 });
+	 $(document).on('click', 'table div.tooltip > .btnReview', function(){
+		//todo
+	 });
 	
 	/* 페이지 처리 */
 	//페이지 숫자 클릭시
@@ -153,8 +178,13 @@ $(function(){
 			tag += '<span id="count">'+ order.count.toLocaleString() +'개</span></td>';
 			tag += '<td><div class="btn-set tooltip">';
 			tag += '<button type="button" class="btn btnTrack">배송 조회</button><br/>';
-			tag += '<button type="button" class="btn">리뷰 쓰기</button><br/>';
+			if(order.ordComplete == 6){
+				tag += '<button type="button" class="btn btnReview">리뷰 작성</button><br/>';
+			}else{
+				tag += '<button type="button" class="btn btnConfirm">구매 확정</button><br/>';	
+			}
 			tag += '<button type="button" class="btn">반품/교환</button>';
+			tag += '<input type="hidden" value="'+ order.ordNo +'"/>';
 			tag += '</div></td></tr>';
 			
 			$('#orderListTable > tbody').append(tag);

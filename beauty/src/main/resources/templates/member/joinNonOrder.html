@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+				xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <meta charset="UTF-8">
+    <th:block th:replace="~{_config :: indexConfigFragment}"></th:block>
+    <!-- 배포 ajax통신 403에러 -->
+    <meta name="_csrf_header" th:content="${_csrf.headerName}">
+	<meta name="_csrf" th:content="${_csrf.token}">
+	
+	<!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+	
+    <!-- css -->
+    <link rel="stylesheet" th:href="@{/css/myshop/init.css}">
+    <link rel="stylesheet" th:href="@{/css/myshop/myPage.css}">
+    <link rel="stylesheet" th:href="@{/css/myshop/myorder.css}">
+    
+    <!-- js -->
+    <script th:src="@{/js/member/joinNonOrder.js}"></script>
+    <script th:src="@{/js/myshop/myshop.js}"></script>
+    <script th:src="@{/js/myshop/myorder.js}"></script>
+    <script th:src="@{/js/myshop/track.js}" defer></script>
+</head>
+	<body>
+	<div id="wrap">
+            <!-- 헤더 -->
+            <th:block th:replace="~{_header :: headerFragment}"></th:block>
+            
+            <!-- 메인 -->
+            <main>
+			<div class="mainBackgorund">
+                    <div class="mainContent">
+	                    <section class="myContent">
+	                    	<div class="myorderFrame">
+								<!-- 기간 선택 -->
+                                <div class="byDate">
+                                <div><strong>[[${name}]]</strong> 고객님 주문 내역</div>
+                                </div>
+                                <!-- 주문 내역 -->
+                                <div class="orderList">
+                                    <table class="" id="orderListTable">
+                                        <thead>
+                                            <tr>
+                                                <th>상품정보</th>
+                                                <th>주문일자</th>
+                                                <th>주문번호</th>
+                                                <th>주문금액(수량)</th>
+                                                <th>주문 상태</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                         <!-- 비었으면 -->
+                                        <tr th:if="${#lists.size(orderList) == 0}"><td colspan='5'>장바구니에 담긴 상품이 없습니다.</td></tr>
+                                        <!-- 아이템 반복 -->
+                                        <th:block th:each="order:${orderList}">
+                                        <tr>
+                                            <td>
+                                                <div>
+                                                    <a href="#">
+                                                        <img th:src="@{/image/}+${order.thumb1}" alt=""/>
+                                                    </a>
+                                                    <ul class="info">
+                                                        <li id="company">
+                                                            <a href="#" th:text="${order.company}"></a>
+                                                        </li>
+                                                        <li id="prodName">
+                                                            <a th:href="@{/shop/view(pno=${order.prodNo})}" th:text="${order.prodName}"></a>
+                                                        </li>
+                                                        <li id="option" th:text="|[옵션 : ${order.color}, ${order.size}]|"></li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                            <td th:text="${order.rdate}"></td>
+                                            <td>
+                                                <a href="#" th:text="${order.ordNo}"></a>
+                                            </td>
+                                            <td>
+                                                <span id="disPrice" th:text="${#numbers.formatInteger(order.getTotalPrice, 0, 'COMMA')}+'원'"></span> <br/>
+                                                <span id="count" th:text="${#numbers.formatInteger(order.count, 0, 'COMMA')}+'개'"></span>
+                                            </td>
+                                            <td>
+                                                <div class="btn-set tooltip">
+                                                    <button type="button" class="btn btnTrack">배송 조회</button> <br/>
+                                                    <button type="button" th:if="${order.ordComplete == 6}" class="btn btnReview">리뷰 쓰기</button><br/>
+                                                    <button type="button" th:unless="${order.ordComplete == 6}" class="btn btnConfirm">구매 확정</button><br/>
+                                                    <button type="button" class="btn">반품/교환</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </th:block>
+                                        <!-- 아이템 반복 종료 -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="center">
+                                    <div class="pagination">
+                                        <a class="prevPage" href="#">&lsaquo;</a>
+                                        
+                                            <a href="#" class="active">1</a>
+                                        
+                                        <a class="nextPage" href="#">&rsaquo;</a>
+                                    </div>
+                                </div>
+	                    	</div>
+	                    </section>
+                	</div>
+                </div>
+            </main>
+
+            <!-- 푸터 -->
+            <th:block th:replace="~{_footer :: footerFragment}"></th:block>
+        </div>
+    </body>
+</html>

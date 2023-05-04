@@ -126,7 +126,8 @@
                                             <td>
                                                 <div class="btn-set tooltip">
                                                     <button type="button" class="btn btnTrack">배송 조회</button> <br/>
-                                                    <button type="button" class="btn">리뷰 쓰기</button><br/>
+                                                    <button type="button" th:if="${order.ordComplete == 6}" class="btn btnReview">리뷰 쓰기</button><br/>
+                                                    <button type="button" th:unless="${order.ordComplete == 6}" class="btn btnConfirm">구매 확정</button><br/>
                                                     <button type="button" class="btn">반품/교환</button>
                                                 </div>
                                             </td>
