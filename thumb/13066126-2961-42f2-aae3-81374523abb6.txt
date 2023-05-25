@@ -1,0 +1,22 @@
+<!-- 조회결과(select)를 상세하게 매핑하기 위한 사용자 정의 MAP -->
+	<resultMap type="kr.co.kmarket.CartVO" id="selectCartListResultMap">
+		<id column="cartNo" property="cartNo"/>
+		<result column="uid" property="uid"/>
+		<result column="prodNo" property="prodNo"/>
+		<result column="count" property="count"/>
+		<result column="price" property="price"/>
+		<result column="discount" property="discount"/>
+		<result column="disPrice" property="disPrice"/>
+		<result column="point" property="point"/>
+		<result column="delivery" property="delivery"/>
+		<result column="total" property="total"/>
+		<result column="rdate" property="rdate"/>
+	
+		<!-- 연관관계 매핑 -->
+		<association property="ProductVO" javaType="kr.co.kmarket.vo.ProductVO">
+			<id column="prodNo" property="prodNo"/>
+			<result column="thumb1" property="thumb1"/>
+			<result column="prodName" property="prodName"/>
+			<result column="descript" property="descript"/>
+		</association>
+	</resultMap>
