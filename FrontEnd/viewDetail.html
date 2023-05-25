@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul {list-style: none;}
+        a {text-decoration: none; color: black;}
+        .detail {
+            width: 1200px;
+            height: auto;
+            margin: 0 auto;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .detail > ul {
+            display: inline-block;
+            width: 1000px;
+            overflow: hidden;
+            text-align: center;
+        }
+        .detail > ul > li {
+            width: 25%;
+            height: 52px;
+            line-height: 50px;
+            float: left;
+            box-sizing: border-box;
+        }
+        .detail > ul > li > a {
+            display: inline-block;
+            width: 100%;
+            height: 50px;
+            box-sizing: border-box;
+        }
+        .detail > ul > li > a.off {
+            border: 1px solid rgba(1, 1, 1, 0.2);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom: none;
+        }
+        .detail > ul > li > a.current {
+            height: 52px;
+            border: 1px solid #925fff;
+            border-radius: 10px;
+        }
+        .detailInfo {
+            width: 1200px;
+            height: auto;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        .detailInfo > div {
+            width: 1000px;
+            height: 1000px;
+            margin: 100px auto;
+            box-sizing: border-box;
+        }
+        #d3 > div > span {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: bold;
+            color: #777;
+            margin: 0 20px 15px 15px;
+            cursor: pointer;
+        }
+        #d3 > div > span.sold {
+            color: #212121;
+            text-decoration: underline;
+        }
+        #d3 > div > article.review:nth-of-type(1) {   
+            border-top: 1px solid #e5e5e5;
+        }
+        #d3 > div > article.review {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #e5e5e5;
+            overflow: hidden;
+            padding: 30px 0;
+            font-size: 13px;
+        }
+        #d3 > div > article.review > span.heart {
+            float: left;
+        }
+        .heart1::after{
+            content: "♥";
+            color: brown;
+            opacity: 0.7;
+        }
+        .heart2::after{
+            content: "♥♥";
+            color: brown;
+            opacity: 0.7;
+        }
+        .heart3::after{
+            content: "♥♥♥";
+            color: brown;
+            opacity: 0.7;
+        }
+        .heart4::after{
+            content: "♥♥♥♥";
+            color: brown;
+            opacity: 0.7;
+        }
+        .heart5::after{
+            content: "♥♥♥♥♥";
+            color: brown;
+            opacity: 0.7;
+        }
+        #d3 > div > article.review > p.writer {
+            float: right;
+            text-align: right;
+            color: #999;
+            font-weight: bold;
+        }
+        #d3 > div > article.review > p.writer > span {color: #000;}
+        #d3 > div > article.review > section {
+            cursor: pointer;
+            overflow: hidden;
+            float: left;
+            clear: both;
+            width: 100%;
+            height: auto;
+        }
+        #d3 > div > article.review > section > p {
+            float: left;
+            clear: both;
+            width: 100%;
+            height: 55px;
+            resize: none;
+            border: none;
+            overflow: hidden;
+            outline: none;
+            white-space: pre-line;
+            font-weight: bold;
+            color: #777;
+        }
+        #d3 > div > article.review > section > span.more{
+            float: left;
+            clear: both;
+            font-size: 12px;
+            font-weight: bold;
+            color: green;
+        }
+        section.eventImg {
+            display: inline-block;
+            width: 1200px;
+            height: 384px;
+            background: url(./img/reviewEvent.jpg) no-repeat;
+            background-size: contain;
+        }
+    </style>
+    <script>
+        $(function(){
+            $(document).on('click','article.review',function(){
+                let txt = $(this).children().children('.more').text();
+                if(txt == "... 더보기"){
+                    $(this).children().children('p').css('height','auto');
+                    $(this).children().children('.more').text('리뷰 접기');
+                }else{
+                    $(this).children().children('p').css('height','55px');
+                    $(this).children().children('.more').text('... 더보기');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="detail">
+        <ul>
+            <li><a href="#" class="current" id="itemInfo">상품정보</a></li>
+            <li><a href="#" class="off" id="shopGuide">상품가이드</a></li>
+            <li><a href="#" class="off" id="itemReview">상품리뷰</a></li>
+            <li><a href="#" class="off" id="itemQna">상품문의</a></li>
+        </ul>
+    </div>
+    <div class="detailInfo">
+        <section class="eventImg"></section>
+        <div id="d3">
+            <div>
+                <span class="sold">추천순</span><span>최신순</span><span>평점순</span><span class="moreReview">☞더 많은 리뷰가 보고 싶으신가요</span>
+                <article class="review" id="review">
+                    <span class="heart1"></span><p class="writer">작성자<br/><span>이름*</span></p>
+                    <section>
+                    <p>내용 테스트
+1
+2
+3
+                    </p>
+                    <span class="more">... 더보기</span>
+                    </section>
+                </article>
+                <article class="review">
+                    <span class="heart2"></span><p class="writer">작성자<br/><span>이름*</span></p>
+                    <section>
+                    <p>내용 테스트
+1
+2
+3
+                    </p>
+                    <span class="more">... 더보기</span>
+                    </section>
+                </article>
+                <article class="review">
+                    <span class="heart5"></span><p class="writer">작성자<br/><span>이름*</span></p>
+                    <section>
+                    <p>내용 테스트
+1
+2
+3
+                    </p>
+                    <span class="more">... 더보기</span>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

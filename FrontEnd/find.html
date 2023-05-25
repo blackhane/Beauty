@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/headfoot.css">
+
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="logo"><a href="#">Beauty Shop</a></div>
+            <section class="moveNavi">
+                <div class="category">
+                    <ul>
+                        <li class="cate">
+                            <a href="#" class="cate1">NEW</a>
+                        </li>
+                        <li class="cate">
+                            <a href="#" class="cate1">BEST</a>
+                        </li>
+                        <li class="cate">
+                            <a href="#" class="cate1">OUTER</a>
+                            <ul class="dep">
+                                <li><a href="#">가디건</a></li>
+                                <li><a href="#">자켓/코트</a></li>
+                                <li><a href="#">패딩/점퍼</a></li>
+                                <li><a href="#">집업/조끼</a></li>
+                            </ul>
+                        </li>
+                        <li class="cate">
+                            <a href="#" class="cate1">TOP</a>
+                            <ul class="dep">
+                                <li><a href="#">티셔츠</a></li>
+                                <li><a href="#">니트/스웨터</a></li>
+                                <li><a href="#">셔츠/블라우스</a></li>
+                                <li><a href="#">맨투맨/후드</a></li>
+                                <li><a href="#">조끼/나시</a></li>
+                            </ul>
+                        </li>
+                        <li class="cate">
+                            <a href="#" class="cate1">BOTTOM</a>
+                            <ul class="dep">
+                                <li><a href="#">스커트</a></li>
+                                <li><a href="#">데님</a></li>
+                                <li><a href="#">팬츠</a></li>
+                                <li><a href="#">슬랙스</a></li>
+                                <li><a href="#">레깅스</a></li>
+                            </ul>
+                        </li>
+                        <li class="cate">
+                            <a href="#" class="cate1">DRESS</a>
+                            <ul class="dep">
+                                <li><a href="#">원피스</a></li>
+                                <li><a href="#">투피스</a></li>
+                                <li><a href="#">점프수트</a></li>
+                            </ul>
+                        </li>
+                        <li class="cate">
+                            <a href="#" class="cate1">ETC</a>
+                            <ul class="dep">
+                                <li><a href="#">신발</a></li>
+                                <li><a href="#">가방</a></li>
+                                <li><a href="#">모자</a></li>
+                                <li><a href="#">쥬얼리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div class="search">
+                <input type="text" name="item"><ion-icon class="icon" name="search-outline"></ion-icon></input>
+            </div>
+            <div class="navigation">
+                <div><a href="#">LOGIN</a></div>
+                <div><a href="#">JOIN</a></div>
+                <div><a href="#">CART</a></div>
+                <div><a href="#">MYPAGE</a></div>
+                <div><a href="#">NOTICE</a></div>
+                <div><a href="#">Q&A</a></div>
+                <div><a href="#">REVIEW</a></div>
+                <div><a href="#">EVENT</a></div>
+            </div>
+        </header>
+
+        
+        <link rel="stylesheet" href="./css/login.css">
+        <script src="./js/login.js"></script>
+        <main>
+            <div class="lg">
+                <section>
+                    <h2>아이디/비밀번호 찾기</h2>
+                    <table>
+                        <tr>
+                            <td class="findId current">아이디 찾기</td>
+                            <td class="findPw">비밀번호 찾기</td>
+                        </tr>
+                    </table>
+                    <article id="member" class="m1">
+                        <div class="login">
+                            <form action="#" method="post">
+                                <input type="text" name="name" placeholder="이름">
+                                <span class="material-icons close">close</span>
+                                <input type="text" name="phone" placeholder="휴대폰 번호('-'없이 입력)" style="margin-top: 10px;">
+                                </input>
+                                <button type="submit">확인</button>
+                            </form>
+                            <div class="reg">
+                                <p>휴대폰 번호 형식이 맞지 않습니다.</p>
+                            </div>
+                        </div>
+                        <div class="other">
+                            <p>
+                                <span class="material-icons">call</span>&nbsp;&nbsp;
+                                0000-0000&nbsp;&nbsp; 평일(월~금) 11:00~19:00 (주말 및 공휴일 휴무)
+                            </p>
+                        </div>
+                    </article>
+                    <article id="member" class="m2">
+                        <div class="login">
+                            <form action="#" method="post">
+                                <input type="text" name="uid" placeholder="아이디">
+                                <span class="material-icons close">close</span>
+                                <button type="submit">확인</button>
+                            </form>
+                        </div>
+                        <div class="other">
+                            <p>
+                                <span class="material-icons">call</span>&nbsp;&nbsp;
+                                0000-0000&nbsp;&nbsp; 평일(월~금) 11:00~19:00 (주말 및 공휴일 휴무)
+                            </p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="up"><ion-icon class="upIcon" name="chevron-up-outline"></ion-icon></div>
+            <div>
+                <ul>
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">이용안내</a></li>
+                </ul>
+                <section>
+                    <strong>CUSTOMER CENTER</strong><br />
+                    <span>T. 0000-0000</span>
+                    <ul>
+                        <li>MON-FRI AM 11:00 - PM 07:00</li>
+                        <li>점심시간 PM 12:00 - PM 01:00</li>
+                        <li>SAT.SUN.HOLIDAY <span>closed</span></li>
+                    </ul>
+                    <ul>
+                        <li>농협 000-0000-0000-00</li>
+                        <li>우리 0000-000-000000</li>
+                        <li>예금주 : 뷰티샵</li>
+                    </ul>
+                </section>
+                <section>
+                    <strong>RETURN/EXCHANGE</strong>
+                    <ul>
+                        <li>교환/반품주소 : 부산 부산진구 중앙대로775번길 5 부산서면우체국</li>
+                        <li>우체국택배 0000-0000</li>
+                    </ul>
+                    <ul>
+                        <li>* 고객센터를 통하여 먼저 접수 후 상품을 보내주셔야하며,</li>
+                        <li>지정택배사를 이용해주시기 바랍니다.</li>
+                    </ul>
+                </section>
+                <section>
+                    <strong>MEMBER</strong>
+                    <ul>
+                        <li><a href="#">장바구니</a></li>
+                        <li><a href="#">마이페이지</a></li>
+                        <li><a href="#">주문조회</a></li>
+                        <li><a href="#">회원정보수정</a></li>
+                        <li><a href="#">관심상품</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <strong>COMMUNITY</strong>
+                    <ul>
+                        <li><a href="#">NOTICE</a></li>
+                        <li><a href="#">Q&A</a></li>
+                        <li><a href="#">REVIEW</a></li>
+                        <li><a href="#">EVENT</a></li>
+                    </ul>
+                </section>
+                <section class="footerinfo">
+                    <ul>
+                        <li>COMPANY : 뷰티샵 OWNER : 홍길동 TEL : 0000-0000 ADDRESS : 부산 부산진구 서면로 XX빌딩</li>
+                        <li>BUSINESS LICENSE : 000-00-00000 ONLINE ORDER LICENSE : 0000-가나다라-0000 [사업자정보확인]</li>
+                        <li>CHIEF PRIVACY OFFICER : 홍길동 EMAIL : email@naver.com</li>
+                    </ul>
+                </section>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

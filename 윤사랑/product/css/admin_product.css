@@ -1,0 +1,235 @@
+/* admin_product_list */
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+li{list-style: none;}
+a{
+    text-decoration: none;
+    color: #111;
+}
+input{outline: none;}
+
+
+header{
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+}
+header > div{}
+header > div > h3{
+    margin-bottom: 20px;
+}
+header > div > .register{
+    border-left: 1px solid #dad6d6;
+    color: #dad6d6;
+    padding: 0 10px;
+}
+header > div > a{
+    color: #dad6d6;
+    padding: 0 10px;
+}
+       
+main{
+    width: 1500px;
+    height: auto;
+    margin: 0 auto;
+}
+main > aside{
+    float: left;
+    width: 200px;
+}
+main > aside > ul{
+    
+}
+main > aside > ul > li{
+    margin: 30px;
+    text-align: center;
+}
+main > aside > ul > li > a{
+    border-bottom: 1px solid #bdb5b58f;
+    padding: 10px;
+    box-sizing: border-box;
+}
+main > aside > ul > li > ul{
+    margin-top: 25px;
+    display: block;
+}
+main > aside > ul > li > ul > li{
+    padding: 5px 5px 5px 34px;
+    text-align: left;
+}
+main > aside > ul > li > ul > li > label > input{
+    margin-right: 5px;
+}
+
+main > section{
+    padding: 30px;
+    height: auto;
+    position: relative;
+    float: right;
+    width: 82%;
+}
+#admin-product-list > div{
+    padding: 0 30px 10px;
+    float: left;
+}
+#admin-product-list > div #search{
+    padding: 2px;
+    border: 1px solid #dad6d6;
+}
+#admin-product-list > div input{
+    border: 0px;
+    border-bottom: 1px solid #dad6d6;
+    height: 22px;
+}
+#admin-product-list > div .searchClick{
+    border: 1px solid #dad6d9;
+    color: #dad6d9;
+    padding: 4px;
+    border-radius: 7px;
+    background: white;
+}
+#admin-product-list > div:nth-child(2){
+    font-size: 14px;
+    float: right;
+    margin: 12px 15px 0;
+	color: #dad6d6;
+}
+#admin-product-list > div:nth-child(2) > a{
+    color: #aea9a9;
+}
+#admin-product-list > table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+#admin-product-list > table tr{}
+#admin-product-list > table tr > th{}
+#admin-product-list > table tr > th > #checkAll{}
+#admin-product-list > table tr > td{
+    text-align: center;
+}
+#admin-product-list > table tr > td:nth-child(6){
+	text-align: left;
+}
+#admin-product-list > table tr > td:last-child > input{
+    border: 0px;
+    background: white;
+}
+#admin-product-list > table tr > td > img{}
+#admin-product-list > .delete{
+    position: absolute;
+    bottom: -15px;
+    left: 38px;
+    background: #e0dadf;
+    color: white;
+    padding: 5px;
+    border: 0px;
+    border-radius: 4px;
+    width: 100px;
+}
+.register{
+    position: absolute;
+    right: 60px;
+    bottom: -20px;
+    background: white;
+    color: #b1acb0;
+    padding: 5px;
+    border: 1px solid #b1acb0;
+    border-radius: 4px;
+    width: 100px;
+}
+#admin-product-list > .page{
+    position: absolute;
+    left: 500px;
+    bottom: -30px;
+}
+#admin-product-list > div > span > a{
+    padding: 4px;
+}
+#admin-product-list .current{
+    border-bottom: 1px solid #b1acb0;
+}
+
+/* admin-product-register */
+#admin-product-register article > h3{
+    border-bottom: 2px solid black;
+    padding: 10px;
+    margin: 10px 0;
+}
+#admin-product-register article > table{
+    width: 100%;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 15px;
+}
+#admin-product-register article > table .selectColor > td{
+    float: left;
+    margin-right: 20px;
+}
+#admin-product-register article > table tr > th{
+    width: 68px;
+}
+#admin-product-register article:nth-child(2) > table > tbody > tr > th:nth-child(1){}
+#admin-product-register article:nth-child(2) > table tr > td > input:nth-child(2){
+    width: 78px;
+    margin-left: 5px;
+}
+#admin-product-register article > table tr > td > select{
+    width: 100px;
+    padding: 3px;
+}
+#admin-product-register article > table tr > td > input{
+    padding: 3px;
+    width: 200px;
+    margin-right: 5px;
+}
+#admin-product-register article > table tr > td > label{
+    margin-right: 10px;
+}
+#admin-product-register article > table tr > td > label > input{
+    margin-right: 5px;
+}
+#admin-product-register article:nth-child(3) > table tr > td{}
+#admin-product-register article:nth-child(3) > table tr > td > label{}
+#admin-product-register article:nth-child(3) > table tr > td > label > input{}
+#admin-product-register article:nth-child(3) > table tr > td > label > span{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+#admin-product-register article:nth-child(3) > table tr > td > label:last-child > span{border: 1px solid #000000;}
+#admin-product-register article > .image{    
+    position: relative;
+}
+#admin-product-register article > .image > table:nth-child(1){}
+#admin-product-register article > .image > table:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 368px;
+}
+#admin-product-register article > .image > table:nth-child(3){
+    position: absolute;
+    top: 0;
+    right: 200px;
+}
+#admin-product-register article > section > table{
+    border-collapse: separate;
+    border-spacing: 17px;
+}
+#admin-product-register article > .image > table tr{}
+#admin-product-register article > .image > table tr > th{
+    border-bottom: 2px solid #111;
+    padding: 10px;
+}
+#admin-product-register article > .image > table tr > td{}
+#admin-product-register article > section > table tr > td > input{
+    margin: 5px;
+}
+#admin-product-list .on{
+	color:#111 !important;
+	font-weight:bold;
+}

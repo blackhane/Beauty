@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Beauty</title>
+    <link rel="stylesheet" th:href="@{/css/admin/product.css}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script th:src="@{/js/admin.js}"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <th:block th:replace="~{/admin/product/_header :: headerFragment}"></th:block>
+        <main>
+            <section id="admin-product-register">
+                <form th:action="@{/admin/product/register}" method="post" enctype="multipart/form-data">
+                    <article>
+                        <h3>상품 기본 정보</h3>
+                        <table>
+                            <tr>
+                                <th>대분류</th>
+                                <td>
+                                    <select name="prodCate1" id="cate1" onChange="cateChange();">
+                                        <option value="0">대분류 선택</option>
+                                        <option value="100">OUTER</option>
+                                        <option value="200">TOP</option>
+                                        <option value="300">BOTTOM</option>
+                                        <option value="400">DRESS</option>
+                                        <option value="500">ACC</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>소분류</th>
+                                <td>
+                                    <select name="prodCate2" id="cate2">
+                                        <option value="0">소분류 선택</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>상품명</th>
+                                <td><input type="text" name="prodName"></td>
+                            </tr>
+                            <tr>
+                                <th>기본설명</th>
+                                <td><input type="text" name="descript"></td>
+                            </tr>
+                            <tr>
+                                <th>원가</th>
+                                <td><input type="text" name="price">원</td>
+                            </tr>
+                            <tr>
+                                <th>할인율</th>
+                                <td><input type="text" name="discount">%</td>
+                            </tr>
+                            <tr>
+                                <th>포인트</th>
+                                <td><input type="text" readonly>원</td>
+                            </tr>
+                            <tr>
+                                <th>재고</th>
+                                <td><input type="text" name="stock">개</td>
+                            </tr>
+                            <tr>
+                                <th>제조업체</th>
+                                <td><input type="text" name="company"></td>
+                            </tr>
+                            <tr>
+                                <th>제조국</th>
+                                <td><input type="text" name="origin"></td>
+                            </tr>
+                            <tr>
+                                <th>제조일</th>
+                                <td><label><input type="date" name="rdate" style="width:206px;"></label></td>
+                            </tr>                     
+                        </table>
+                    </article>
+                    <article>
+                        <h3>상품 상세 정보</h3>
+                        <table>              
+                        	<tr>
+                        		<th>제품 선택</th>
+                        		<td><button>상세정보 입력</button></td>
+                        	</tr>             
+                            <tr>
+                                <th>소재</th>
+                                <td><input type="text" name="status"></td>
+                            </tr>     
+                            <tr>
+                                <th>두께감</th>
+                                <td>
+                                    <label><input type="radio" name="thick" value="두꺼움">두꺼움</label>
+                                    <label><input type="radio" name="thick" value="보통">보통</label>
+                                    <label><input type="radio" name="thick" value="얇음">얇음</label>
+                                 </td>
+                            </tr>                
+                            <tr>
+                                <th>비침</th>
+                                <td>
+                                    <label><input type="radio" name="through" value="비침">비침</label>
+                                    <label><input type="radio" name="through" value="약간있음">약간있음</label>
+                                    <label><input type="radio" name="through" value="없음">없음</label>
+                                </td>
+                            </tr>                
+                            <tr>
+                                <th>안감</th>
+                                <td>
+                                    <label><input type="radio" name="lining" value="있음">있음</label>
+                                    <label><input type="radio" name="lining" value="없음">없음</label>
+                                    <label><input type="radio" name="lining" value="부분안감">부분안감</label>
+                                </td>
+                            </tr>                
+                            <tr>
+                                <th>신축성</th>
+                                <td>
+                                    <label><input type="radio" name="flex" value="좋음">좋음</label>
+                                    <label><input type="radio" name="flex" value="보통">보통</label>
+                                    <label><input type="radio" name="flex" value="없음">없음</label>
+                                </td>
+                            </tr>       
+                        </table>
+                        <section class="image">
+                            <table>
+                                <tr><th>상품 메인 이미지()</th></tr>
+                                <tr>
+                                    <td>
+                                        <input type="file" name="file1"><br>
+                                        <input type="file" name="file2"><br>
+                                        <input type="file" name="file3"><br>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr><th>상품 목록 이미지()</th></tr>
+                                <tr>
+                                    <td>
+                                        <input type="file" name="file4"><br>
+                                        <input type="file" name="file5"><br>
+                                        <input type="file" name="file6"><br>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr><th>상품 상세 이미지()</th></tr>
+                                <tr>
+                                    <td>
+                                        <input type="file" name="file7"><br>
+                                        <input type="file" name="file8"><br>
+                                        <input type="file" name="file9"><br>
+                                    </td>
+                                </tr>
+                            </table>
+                        </section>
+                    </article>
+                    <input type="submit" value="등록" class="register">
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

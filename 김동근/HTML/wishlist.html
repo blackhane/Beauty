@@ -1,0 +1,317 @@
+<!--
+날짜 : 2023/03/01
+이름 : 김동근
+내용 : 포트폴리오01 HTML wishlist
+-->
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- 웹 폰트 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@300&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+        <!-- 라이브러리 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <!-- css -->
+        <link rel="stylesheet" href="./css/init.css">
+        <link rel="stylesheet" href="./css/myPage.css">
+        <link rel="stylesheet" href="./css/wishlist.css">
+        <!-- js -->
+        <script src="./js/main.js"></script>
+        <title>WishList</title>
+        <style>
+            
+        </style>
+        <script>
+            
+        </script>
+    </head>
+    <body>
+        <div id="wrap">
+            <!-- 헤더 -->
+            <header>
+                <div class="logo"><a href="#">Beauty Shop</a></div>
+                <section class="moveNavi">
+                    <div class="category">
+                        <ul>
+                            <li class="cate">
+                                <a href="#" class="cate1">NEW</a>
+                            </li>
+                            <li class="cate">
+                                <a href="#" class="cate1">BEST</a>
+                            </li>
+                            <li class="cate">
+                                <a href="#" class="cate1">OUTER</a>
+                                <ul class="dep">
+                                    <li><a href="#">가디건</a></li>
+                                    <li><a href="#">자켓/코트</a></li>
+                                    <li><a href="#">패딩/점퍼</a></li>
+                                    <li><a href="#">집업/조끼</a></li>
+                                </ul>
+                            </li>
+                            <li class="cate">
+                                <a href="#" class="cate1">TOP</a>
+                                <ul class="dep">
+                                    <li><a href="#">티셔츠</a></li>
+                                    <li><a href="#">니트/스웨터</a></li>
+                                    <li><a href="#">셔츠/블라우스</a></li>
+                                    <li><a href="#">맨투맨/후드</a></li>
+                                    <li><a href="#">조끼/나시</a></li>
+                                </ul>
+                            </li>
+                            <li class="cate">
+                                <a href="#" class="cate1">BOTTOM</a>
+                                <ul class="dep">
+                                    <li><a href="#">스커트</a></li>
+                                    <li><a href="#">데님</a></li>
+                                    <li><a href="#">팬츠</a></li>
+                                    <li><a href="#">슬랙스</a></li>
+                                    <li><a href="#">레깅스</a></li>
+                                </ul>
+                            </li>
+                            <li class="cate">
+                                <a href="#" class="cate1">DRESS</a>
+                                <ul class="dep">
+                                    <li><a href="#">원피스</a></li>
+                                    <li><a href="#">투피스</a></li>
+                                    <li><a href="#">점프수트</a></li>
+                                </ul>
+                            </li>
+                            <li class="cate">
+                                <a href="#" class="cate1">ACC</a>
+                                <ul class="dep">
+                                    <li><a href="#">목도리/장갑</a></li>
+                                    <li><a href="#">양말</a></li>
+                                    <li><a href="#">벨트</a></li>
+                                    <li><a href="#">쥬얼리</a></li>
+                                    <li><a href="#">시계</a></li>
+                                    <li><a href="#">모자</a></li>
+                                    <li><a href="#">홈웨어</a></li>
+                                    <li><a href="#">슈즈</a></li>
+                                    <li><a href="#">백</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            <div class="search">
+                <input type="text" name="item"><ion-icon class="icon" name="search-outline"></ion-icon></input>
+            </div>
+            <div class="navigation">
+                <div><a href="#">LOGIN</a></div>
+                <div><a href="#">JOIN</a></div>
+                <div><a href="#">CART</a></div>
+                <div><a href="#">MYPAGE</a></div>
+                <div><a href="#">NOTICE</a></div>
+                <div><a href="#">Q&A</a></div>
+                <div><a href="#">REVIEW</a></div>
+                <div><a href="#">EVENT</a></div>
+            </div>
+            </header>
+
+            <!-- 메인 -->
+            <main>
+                <div class="mainBackgorund">
+                    <div class="mainContent">
+                        <!-- 콘텐츠 -->
+                        <section class="myContent">
+                            <!-- 마이페이지 메뉴 -->
+                            <aside class="myMenu">
+                                <ul>
+                                    <li class="on"><a href="#">주문 조회</a></li>
+                                    <li><a href="#">위시 리스트</a></li>
+                                    <li><a href="#">취소/교환/반품</a></li>
+                                    <li><a href="#">1:1문의</a></li>
+                                    <li><a href="#">정보 수정</a></li>
+                                    <li><a href="#">회원탈퇴</a></li>
+                                </ul>
+                            </aside>
+
+                            <!-- 회원 정보 -->
+                            <nav class="head">
+                                <div class="user">
+                                    <div class="userThumb disnone" >
+                                        <a href="#">
+                                            <img src="./images/default_profile.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="userInfo">
+                                        <div><span id="userNick">김동근</span>님의 회원 정보입니다.</div>
+                                        <div>Lv.<span id="level">1</span> <span id="levelName">실버</span></div>
+                                        <div>
+                                            <div class="boughtPrice">
+                                                <span>누적 구매 금액</span>
+                                                <span id="boughtPrice">250,000</span>
+                                            </div>
+                                            <div class="point">
+                                                <span>현재 포인트</span>
+                                                <span id="point">5,000</span>
+                                            </div>
+                                            <div class="coupon">
+                                                <span>보유 쿠폰</span>
+                                                <span id="countCoupon">3</span>
+                                            </div>
+                                            <div class="levelPoint">
+                                                <span>등급 점수</span>
+                                                <span id="levelPoint">2,500</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="level">
+                                    <ul class="levelInfo">
+                                        <li>누적 구매금액은 실시간 반영이 아닌 출고요청 상태 주문건을 기준으로 매주 월요일 새벽에 집계됩니다.</li>
+                                        <li>누적 구매금액은 최근 5년 치가 반영됩니다.</li>
+                                    </ul>
+                                </div>
+                            </nav>
+
+                            <!-- 위시리스트 -->
+                            <div class="wishListFrame">
+                                <div class="wishListHead">
+                                    위시리스트
+                                    <span class="headCount" id="headCount">5</span>
+                                    <a href="#">비우기 X</a>
+                                </div>
+                                <article class="wishList">
+                                    <!-- 아이템 반복 -->
+                                    <div class="item">
+                                        <div class="itemThumb">
+                                            <a href="#">
+                                                <img src="./images/default_profile.png" alt="">
+                                            </a>
+                                            <a class="delete" href="#">x</a>
+                                        </div>
+                                        <div class="itemInfo">
+                                            <a href="#">[매스티지] 바오바오 루센트ㄴㄴ</a>
+                                            <span class="price">40,000원</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="itemThumb">
+                                            <a href="#">
+                                                <img src="./images/default_profile.png" alt="">
+                                            </a>
+                                            <a class="delete" href="#">x</a>
+                                        </div>
+                                        <div class="itemInfo">
+                                            <a href="#">[매스티지] 바오바오 루센트ㄴㄴ</a>
+                                            <span class="price">40,000원</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="itemThumb">
+                                            <a href="#">
+                                                <img src="./images/default_profile.png" alt="">
+                                            </a>
+                                            <a class="delete" href="#">x</a>
+                                        </div>
+                                        <div class="itemInfo">
+                                            <a href="#">[매스티지] 바오바오 루센트ㄴㄴ</a>
+                                            <span class="price">40,000원</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="itemThumb">
+                                            <a href="#">
+                                                <img src="./images/default_profile.png" alt="">
+                                            </a>
+                                            <a class="delete" href="#">x</a>
+                                        </div>
+                                        <div class="itemInfo">
+                                            <a href="#">[매스티지] 바오바오 루센트ㄴㄴ</a>
+                                            <span class="price">40,000원</span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="itemThumb">
+                                            <a href="#">
+                                                <img src="./images/default_profile.png" alt="">
+                                            </a>
+                                            <a class="delete" href="#">x</a>
+                                        </div>
+                                        <div class="itemInfo">
+                                            <a href="#">[매스티지] 바오바오 루센트ㄴㄴ</a>
+                                            <span class="price">40,000원</span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+
+                        </section>
+                    </div>
+                </div>
+            </main>
+
+            <!-- 푸터 -->
+            <footer>
+                <div class="up"><ion-icon class="upIcon" name="chevron-up-outline"></ion-icon></div>
+                <div>
+                    <ul>
+                        <li><a href="#">홈</a></li>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="#">이용안내</a></li>
+                    </ul>
+                    <section>
+                        <strong>CUSTOMER CENTER</strong><br/>
+                        <span>T. 0000-0000</span>
+                        <ul>
+                            <li>MON-FRI AM 11:00 - PM 07:00</li>
+                            <li>점심시간 PM 12:00 - PM 01:00</li>
+                            <li>SAT.SUN.HOLIDAY <span>closed</span></li>
+                        </ul>
+                        <ul>
+                            <li>농협 000-0000-0000-00</li>
+                            <li>우리 0000-000-000000</li>
+                            <li>예금주 : 뷰티샵</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <strong>RETURN/EXCHANGE</strong>
+                        <ul>
+                            <li>교환/반품주소 : 부산 부산진구 중앙대로775번길 5 부산서면우체국</li>
+                            <li>우체국택배 0000-0000</li>
+                        </ul>
+                        <ul>
+                            <li>* 고객센터를 통하여 먼저 접수 후 상품을 보내주셔야하며,</li>
+                            <li>지정택배사를 이용해주시기 바랍니다.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <strong>MEMBER</strong>
+                        <ul>
+                            <li><a href="#">장바구니</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">주문조회</a></li>
+                            <li><a href="#">회원정보수정</a></li>
+                            <li><a href="#">관심상품</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <strong>COMMUNITY</strong>
+                        <ul>
+                            <li><a href="#">NOTICE</a></li>
+                            <li><a href="#">Q&A</a></li>
+                            <li><a href="#">REVIEW</a></li>
+                            <li><a href="#">EVENT</a></li>
+                        </ul>
+                    </section>
+                    <section class="footerinfo">
+                        <ul>
+                            <li>COMPANY : 뷰티샵 OWNER : 홍길동 TEL : 0000-0000 ADDRESS : 부산 부산진구 서면로 XX빌딩</li>
+                            <li>BUSINESS LICENSE : 000-00-00000 ONLINE ORDER LICENSE : 0000-가나다라-0000 [사업자정보확인]</li>
+                            <li>CHIEF PRIVACY OFFICER : 홍길동 EMAIL : email@naver.com</li>
+                        </ul>
+                    </section>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

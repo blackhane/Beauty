@@ -1,0 +1,10 @@
+.logo {
+    width: 100%;
+    text-align: center;
+}
+.logo > a {
+    margin: 0 auto;
+    line-height: 50px;
+}
+.navigation {display: none;}
+.search {display: none;}

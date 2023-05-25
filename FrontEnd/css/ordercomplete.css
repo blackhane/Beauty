@@ -1,0 +1,315 @@
+main div.mainBackgorund {
+    
+}
+main div.mainContent {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px auto;
+    padding: 50px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 현재페이지 */
+main div.orderFrame > .nav {
+    display: block;
+    text-align: right;
+    margin: 30px 0;
+}
+main div.orderFrame > .nav > p {
+    display: inline-block;
+    margin-left: 20px;
+    font-weight: normal;
+    font-size: 10px;
+    text-align: left;
+    color: #555;
+}
+main div.orderFrame > .nav > p > span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background: #e5e5e5;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 3px;
+}
+main div.orderFrame > .nav > p.current {
+    color: #212121;
+    font-weight: bold;
+}
+main div.orderFrame > .nav > p.current span {
+    background: #81cb49;
+}
+
+/*상품 - 주문*/
+main div.orderFrame {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+main div.orderFrame > div {}
+
+main div.orderFrame > div.wrap-left {
+    width: 600px;
+    float: left;
+}
+main div.orderFrame > div.wrap-right {
+    width: 380px;
+    float: right;
+}
+
+main div.orderFrame > div > section {
+    margin-bottom: 30px;
+}
+main div.orderFrame > div > section > p {
+    color: #555;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+main div.orderFrame .orderBox {
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    border: 1px solid #e5e5e5;
+    margin-top: 20px;
+    padding: 5px 30px;
+    box-sizing: border-box;
+}
+
+
+
+/* prodList */
+main div.orderFrame .prodList table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 15px;
+}
+main div.orderFrame .prodList table > thead > tr {
+    border-bottom: 1px solid #d5d5d5;
+}
+
+main div.orderFrame .prodList table > tbody > tr {
+    border-bottom: 1px solid #e5e5e5;
+} 
+
+main div.orderFrame .prodList table > tbody > tr:last-child{
+    border-color: #d5d5d5;
+}
+
+main div.orderFrame .prodList table th {
+    padding: 5px 0;
+}
+
+main div.orderFrame .prodList table td {
+    padding: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+main div.orderFrame .prodList table td:nth-child(1) {
+    width: 100px;
+}
+main div.orderFrame .prodList table td:nth-child(1) > img {
+    width: 80px;
+    height: 80px;
+}
+
+main div.orderFrame .prodList table td:nth-child(2) > span {
+    display: block;
+}
+main div.orderFrame .prodList table td:nth-child(2) > span:nth-child(2) {
+    font-size: 12px;
+    color: #666;
+}
+main div.orderFrame .prodList table td:nth-child(2) > span:nth-child(2)::before {
+    content: "[옵션: ";
+}
+main div.orderFrame .prodList table td:nth-child(2) > span:nth-child(2)::after {
+    content: "]";
+}
+main div.orderFrame .prodList table td:nth-child(2) > span:nth-child(3) {
+    font-weight: bold;
+}
+main div.orderFrame .prodList table td:nth-child(2) > span:nth-child(3)::after {
+    content: "원";
+}
+main div.orderFrame .prodList table td:nth-child(n+3):nth-child(-n+5){
+    width: 80px;
+    text-align: center;
+}
+
+
+
+/* buyer, receiver*/
+main div.orderFrame .buyer {}
+main div.orderFrame .receiver {}
+
+main div.orderFrame .infoTable {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 12px;
+}
+
+main div.orderFrame .infoTable tr {
+    border-bottom: 1px solid #e5e5e5;
+    border-left: 0;
+    border-right: 0;
+}
+main div.orderFrame .infoTable tr:last-child {
+    border-bottom: 0;
+}
+
+main div.orderFrame .infoTable th {
+    width: 90px;
+    background-color: #fff;
+    color: #353535;
+    text-align: left;
+    font-weight: normal;
+    padding: 12px 18px;
+    border-right: 1px solid #e5e5e5;
+}
+
+main div.orderFrame .infoTable td {
+    padding: 12px 10px;
+    color: #353535;
+    font-size: 12px;
+}
+
+main div.orderFrame .infoTable input {
+    margin: 1px;
+}
+
+main div.orderFrame .infoTable tr:nth-child(3) #btnZip {
+    padding: 1px 6px;
+    margin-bottom: 6px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+
+/* total */
+main div.orderFrame .total {}
+
+
+main div.orderFrame .total > .orderBox {
+    overflow: hidden;
+    line-height: 25px;
+}
+main div.orderFrame .total .totalLeft {
+    float: left;
+    color: #999;
+    font-size: 14px;
+    
+}
+main div.orderFrame .total .totalRight {
+    float: right;
+    text-align: right;
+    font-size: 16px;
+}
+main div.orderFrame .total .totalBottom {
+    width: 100%;
+    float: left;
+    margin: 10px 0;
+    padding-top: 10px;
+    border-top: 1px solid #a5a5a5;
+    overflow: hidden;
+}
+main div.orderFrame .total .totalBottom > p:first-child{
+    float: left;
+    font-size: 15px;
+}
+main div.orderFrame .total .totalBottom > p:last-child{
+    float: right;
+    font-size: 16px;
+}
+
+/* payment */
+main div.orderFrame .payment {}
+
+/* 결제방식 */
+main div.orderFrame .payment .paymentList {
+    margin: 10px 0;
+}
+main div.orderFrame .payment .paymentList > li {
+    display: inline-block;
+}
+
+main div.orderFrame .payment .paymentList > li input[type=radio] {
+    display: none;
+} 
+main div.orderFrame .payment .paymentList > li input[type=radio]+label {
+    display: inline-block;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    font-size:14px;
+    font-weight:bold;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #333;
+}
+main div.orderFrame .payment .paymentList > li input[type=radio]:checked+label{
+    background-color: #333;
+    color: #fff;
+}
+/* 결제수단 */
+main div.orderFrame .payment .paymentItemList {
+    font-size: 0;
+    text-align: center;
+}
+main div.orderFrame .payment .paymentItemList li {
+    display: inline-block;
+    margin: 5px;
+}
+main div.orderFrame .payment .paymentItemList img {
+    width: 90px;
+    height: 40px;
+}
+
+/* terms */
+main div.orderFrame .terms > .orderBox > div {
+    margin: 5px 0;
+}
+main div.orderFrame .terms > .orderBox input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+    border: #4f4f4f;
+}
+main div.orderFrame .terms > .orderBox > div:nth-child(n+2) input[type=checkbox] {
+    position: relative;
+    top: 2px;
+}
+
+main div.orderFrame .terms > .orderBox > div:nth-child(n+2) > label::before {
+    color: #a5a5a5;
+    content: "├";
+}
+
+main div.orderFrame .terms > .orderBox > div:last-child > label::before {
+    color: #a5a5a5;
+    content: "└";
+}
+
+/* btnOrder */
+
+main div.orderFrame a.btnOrder {
+    display: block;
+    width: 380px;
+    height: 60px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    background-color: #4f4f4f;
+    border-color: #4f4f4f;
+    border-radius: 6px;
+    margin: 0 auto;
+}
